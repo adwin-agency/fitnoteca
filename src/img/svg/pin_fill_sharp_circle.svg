@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" viewBox="0 0 14 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f3f4f9;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="pin_fill_sharp_circle" class="cls-1" d="M828,348.988a6.993,6.993,0,0,0-6.987,7c0,3.866,6.987,13,6.987,13s6.988-9.134,6.988-13A6.994,6.994,0,0,0,828,348.988Zm0,9.218a2,2,0,1,1,2-2A2,2,0,0,1,828,358.206Z" transform="translate(-821 -349)"/>
+</svg>

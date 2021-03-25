@@ -1,0 +1,49 @@
+.cat-banner{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &.specials-banner{
+        margin-bottom: 77px;
+    }
+    &__container{
+        position: relative;
+        padding-top: 209px;
+        padding-bottom: 59px;
+    }
+    &__header{
+        color:white;
+    }
+}
+.banner-sale{
+    position: absolute;
+    right: 86px;
+    top: 69px;
+}
+@media(max-width:1280px){
+    .cat-banner{
+        &.specials-banner{
+            margin-bottom: 50px;
+        }
+        &__container{
+            padding-top: 173px;
+            padding-bottom: 46px;
+        }
+    }
+    .banner-sale {
+        right: 20px;
+        top: 62px;
+        width: 478px;
+    }
+}
+@media(max-width:768px){
+    .banner-sale {
+        right: 10px;
+        top: 36px;
+        width: 478px;
+    }
+    .cat-banner__container{
+        max-width: 300px;
+    }
+    
+}

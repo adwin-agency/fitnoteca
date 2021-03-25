@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>fitstore</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="header__row d-flex">
+                <div class="header__burger">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </div>
+                <div class="header__logo">
+                    <a href="/"><img src="img/fitnoteca_logo.svg" alt=""></a>
+                </div>
+                <nav class="header__nav">
+                    <div class="nav-container">
+                        <ul class="header__menu d-flex">
+                            <li class="header__menu-item header__menu-item_with-child">
+                                <a class="header__link">Каталог</a>
+                                <section class="dropdown">
+                                    <div class="dropdown__container">
+                                        <div class="dropdown__menu-container d-flex">
+                                            <div class="dropdown__wrapper">
+                                                <a href="cat-category1.html" class="dropdown__header">Косметика</a>
+                                                <ul class="dropdown__menu">
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для лица</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для тела</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для рук</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для ног</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для волос</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown__wrapper">
+                                                <a href="cat-category2.html" class="dropdown__header">Одежда</a>
+                                                <ul class="dropdown__menu">
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Лосины</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Велосипедки</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Топы и футболки</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Комбинезоны</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Кофты и толстовки</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown__wrapper">
+                                                <a href="cat-category3.html" class="dropdown__header">Продукты
+                                                    Fitnoteca</a>
+                                                <ul class="dropdown__menu">
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory3-1.html"
+                                                            class="dropdown__menu-link">Групповые абонементы</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory3-2.html"
+                                                            class="dropdown__menu-link">Индивидуальные тренировки</a>
+                                                    </li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory3-3.html"
+                                                            class="dropdown__menu-link">Массаж</a></li>
+                                                    <li class="dropdown__menu-item"><a href="#"
+                                                            class="dropdown__menu-link">Аксессуары</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__banner">
+                                            <a href="/specials.html" class="dropdown__banner-link">Спецпредложения
+                                                <svg class="dropdown__banner-link-img">
+                                                    <use xlink:href="img/sprites/sprite.svg#arrow_right-menu"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="header__menu-item"><a class="header__link" href="payment.html">Оплата</a></li>
+                            <li class="header__menu-item"><a class="header__link" href="delivery.html">Доставка</a></li>
+                            <li class="header__menu-item"><a class="header__link" href="about.html">О магазине</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header__icons d-flex">
+                    <a href="#">
+                        <svg class="header__icons-img inst">
+                            <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <span class="header__icons-split"></span>
+                    <!--
+                <svg class="header__icons-img">
+                    <use xlink:href="img/sprites/sprite.svg#search_left"></use>
+                </svg>-->
+                    <div class="cart-icon__wrap active">
+                        <svg class="header__icons-img" id="cart-icon">
+                            <use xlink:href="img/sprites/sprite.svg#cart"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

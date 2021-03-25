@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #21303d;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="option_bar_settings" class="cls-1" d="M591.992,356h2v2h-2v9h-2v-9h-2v-2h2v-9h2v9ZM599,347h-2v4h-2v2h2v14h2V353h2v-2h-2v-4Zm7.008,9v-9h-2v9h-2v2h2v9h2v-9h2v-2h-2Z" transform="translate(-588 -347)"/>
+</svg>

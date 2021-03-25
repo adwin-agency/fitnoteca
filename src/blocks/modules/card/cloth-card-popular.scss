@@ -1,0 +1,101 @@
+.cloth-popular{
+    padding-top: 120px;
+    margin-bottom: -11px;
+    &__goods{
+        margin-left: auto;
+        width: 1180px;
+        max-width: 100%;
+    }
+    &__text{
+        margin-top: 26px;
+    }
+}
+.cloth-popular .cat1-goods__list{
+    width: 1240px;
+    max-width: 100%;
+}
+
+@media(max-width:1600px){
+
+    .cloth-popular {
+        padding-top: 127px;
+        margin-bottom: 18px;
+    }
+    .cloth-popular__goods{
+        width: 940px;
+    }
+    .cloth-popular__text {
+        margin-top: 14px;
+    }
+
+}
+@media(max-width:1280px){
+    .cloth-popular__container{
+        flex-direction: column;
+    }
+    .cloth-popular__header br{
+        display: none;
+    }
+    .cloth-popular{
+        padding-top: 121px;
+        margin-bottom: 0px;
+        
+    }
+    .cloth-popular__text {
+        margin-bottom: 31px;
+    }
+}
+
+@media(max-width:960px){
+    .cloth-popular .cat1-goods__list {
+        width: 100%;
+        max-width: 100%;
+    }
+ 
+    .owl-stage-outer{
+        max-width: 100%;
+    }
+    .owl-stage{
+        display: flex;
+        max-width: 100%;
+    }
+    .cloth-popular__goods{
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .cloth-popular__goods .add-cart{
+        width: auto;
+    }
+    .cloth-popular .cat2-goods__item{
+        width: 300px;
+        height: 500px;
+        max-width: 300px;
+    }
+    .cloth-popular .cat2-goods__item-top {
+        height: 400px;
+    }
+
+    .cloth-popular {
+        padding-top: 50px;
+    }
+
+}
+
+@media(max-width:865px){
+
+
+
+}
+@media(max-width:768px){
+    .cloth-popular .cat2-goods__list {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .cloth-popular {
+        padding-top: 63px;
+    }
+    .cloth-popular__text {
+        margin-bottom: 12px;
+    }
+}

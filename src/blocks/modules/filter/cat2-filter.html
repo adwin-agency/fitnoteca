@@ -1,0 +1,113 @@
+<div class="filter__wrapper">
+    <div class="filter__mob-top">
+    <button class="filter__btn btn bg_pink">
+        <svg class="filter__btn-img">
+            <use xlink:href="img/sprites/sprite.svg#option_bar_settings"></use>
+        </svg>Фильтры</button>
+        <div class="popup__close">
+            <span class="close-line close-line1"></span>
+            <span class="close-line close-line2"></span>
+        </div>
+    </div>
+    <div class="filter__current">
+        <ul class="filter__current-list">
+        </ul>
+        <button class="filter__reset-btn">Сбросить фильтры</button>
+    </div>  
+<div class="filter cat2__filter">
+    <div class="filter__category">
+        <p class="filter__category-header">Категория</p>
+        <ul class="filter__category-list">
+            <li class="filter__category-item ">
+                <a href="#" class="filter__category-link filter__category-link_current d-flex">
+                    <span>Лосины</span>
+                </a>
+            </li>
+            <li class="filter__category-item ">
+                <a href="#" class="filter__category-link d-flex">
+                    <span>Велосипедки</span>
+                </a>
+            </li>
+            <li class="filter__category-item ">
+                <a href="#" class="filter__category-link d-flex">
+                    <span>топы и футболки</span>
+                </a>
+            </li>
+            <li class="filter__category-item ">
+                <a href="#" class="filter__category-link d-flex">
+                    <span>комбинезоны</span>
+                </a>
+            </li>
+            <li class="filter__category-item ">
+                <a href="#" class="filter__category-link d-flex">
+                    <span>кофты и толстовки</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <form action="" class="form-filter">
+        <p class="form-filter__header">Фильтры</p>
+        <div class="form-select">
+            <span class="form-select__selected">Все бренды</span>
+            <select name="select" class="hidden-select">
+                <option value="Все Бренды" name="Бренд:" selected>Все бренды</option>
+                <option value="опция 2" name="Бренд:">опция 2</option>
+                <option value="опция 3" name="Бренд:">опция 3</option>
+                <option value="опция 4" name="Бренд:">опция 4</option>
+            </select>
+            <ul class="form-select-list" >
+                <li class="form-select__option">Все бренды</li>
+                <li class="form-select__option">опция 2</li>
+                <li class="form-select__option">опция 3</li>
+                <li class="form-select__option">опция 4</li>
+            </ul>
+        </div>
+        <div class="form-range">
+            <div class="range-inputs">
+                    <input type="text"  class="range-input" id="range-input-min" value="10">
+                    <input type="text" class="range-input" id="range-input-max" value="10000">
+            </div>
+            <div class="range" id="range"></div>
+        </div>
+        <div class="cloth-checkbox__container" >
+            <p class="cloth-checkbox__header">Размер</p>
+            <input type="checkbox" class="cloth-checkbox" id="cloth-checkbox1" name="Размер:" value="XS"/>
+            <label for="cloth-checkbox1">XS</label>
+            <input type="checkbox" class="cloth-checkbox" id="cloth-checkbox2" name="Размер:" value="S"/>
+            <label for="cloth-checkbox2">S</label>
+            <input type="checkbox" class="cloth-checkbox" id="cloth-checkbox3" name="Размер:" value="M"/>
+            <label for="cloth-checkbox3">M</label>
+            <input type="checkbox" class="cloth-checkbox" id="cloth-checkbox4" name="Размер:" value="L" />
+            <label for="cloth-checkbox4">L</label>
+            <input type="checkbox" class="cloth-checkbox" id="cloth-checkbox5" name="Размер:" value="XL"/>
+            <label for="cloth-checkbox5">XL</label>
+        </div>
+        <div class="color-checkbox__container" >
+            <p class="color-checkbox__header">Цвет</p>
+                <input type="checkbox" class="color-checkbox" id="color-checkbox1" checked name="Цвет:" value="Белый"/>
+                <label for="color-checkbox1" style="background-color: white;"></label>
+                <input type="checkbox" class="color-checkbox" id="color-checkbox2" name="Цвет:" value="Тёмный"/>
+                <label for="color-checkbox2" style="background-color:#393939;"></label>
+                <input type="checkbox" class="color-checkbox" id="color-checkbox3" name="Цвет:" value="Зелёный"/>
+                <label for="color-checkbox3" style="background-color:#00ba90;"></label>
+                <input type="checkbox" class="color-checkbox" id="color-checkbox4" name="Цвет:" value="Розовый"/>
+                <label for="color-checkbox4" style="background-color: #e871d3;"></label>
+                <input type="checkbox" class="color-checkbox" id="color-checkbox5" name="Цвет:" value="Голубой"/>
+                <label for="color-checkbox5" style="background-color: #2ca7f2;"></label>
+                <input type="checkbox" class="color-checkbox" id="color-checkbox6" name="Цвет:" value="Красный"/>
+                <label for="color-checkbox6" style="background-color: #ff5757;"></label>
+                <input type="checkbox" class="color-checkbox" id="color-checkbox7" name="Цвет:" value="Серый"/>
+                <label for="color-checkbox7" style="background-color:#e0e0e0;"></label>
+        </div>
+        <div class="filter__checkboxes">
+            <div class="form-checkbox">
+                <input type="checkbox" class="checkbox" id="checkbox3" value="Товары со скидкой" name=""/>
+                <label for="checkbox3">Товары со скидкой</label>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="filter__result">
+    <button class="filter__result-btn btn bg_pink">Посмотреть результаты</button>
+</div>
+</div>

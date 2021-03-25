@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>fitstore</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="header__row d-flex">
+                <div class="header__burger">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </div>
+                <div class="header__logo">
+                    <a href="/"><img src="img/fitnoteca_logo.svg" alt=""></a>
+                </div>
+                <nav class="header__nav">
+                    <div class="nav-container">
+                        <ul class="header__menu d-flex">
+                            <li class="header__menu-item header__menu-item_with-child">
+                                <a class="header__link">Каталог</a>
+                                <section class="dropdown">
+                                    <div class="dropdown__container">
+                                        <div class="dropdown__menu-container d-flex">
+                                            <div class="dropdown__wrapper">
+                                                <a href="cat-category1.html" class="dropdown__header">Косметика</a>
+                                                <ul class="dropdown__menu">
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для лица</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для тела</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для рук</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для ног</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для волос</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown__wrapper">
+                                                <a href="cat-category2.html" class="dropdown__header">Одежда</a>
+                                                <ul class="dropdown__menu">
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Лосины</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Велосипедки</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Топы и футболки</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Комбинезоны</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Кофты и толстовки</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown__wrapper">
+                                                <a href="cat-category3.html" class="dropdown__header">Продукты
+                                                    Fitnoteca</a>
+                                                <ul class="dropdown__menu">
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory3-1.html"
+                                                            class="dropdown__menu-link">Групповые абонементы</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory3-2.html"
+                                                            class="dropdown__menu-link">Индивидуальные тренировки</a>
+                                                    </li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory3-3.html"
+                                                            class="dropdown__menu-link">Массаж</a></li>
+                                                    <li class="dropdown__menu-item"><a href="#"
+                                                            class="dropdown__menu-link">Аксессуары</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__banner">
+                                            <a href="/specials.html" class="dropdown__banner-link">Спецпредложения
+                                                <svg class="dropdown__banner-link-img">
+                                                    <use xlink:href="img/sprites/sprite.svg#arrow_right-menu"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="header__menu-item"><a class="header__link" href="payment.html">Оплата</a></li>
+                            <li class="header__menu-item"><a class="header__link" href="delivery.html">Доставка</a></li>
+                            <li class="header__menu-item"><a class="header__link" href="about.html">О магазине</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header__icons d-flex">
+                    <a href="#">
+                        <svg class="header__icons-img inst">
+                            <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <span class="header__icons-split"></span>
+                    <!--
+                <svg class="header__icons-img">
+                    <use xlink:href="img/sprites/sprite.svg#search_left"></use>
+                </svg>-->
+                    <div class="cart-icon__wrap active">
+                        <svg class="header__icons-img" id="cart-icon">
+                            <use xlink:href="img/sprites/sprite.svg#cart"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<main class="main about-main">
+    <section class="about-banner">
+    <video   class="about-banner__video" loop="loop" autoplay="autoplay" tabindex="0" muted="muted">
+        <source src="img/video-about.MP4"  />
+    </video>
+    <div class="about-banner__wrapper">
+        <div class="container about-banner__container">
+            <h1 class="about-banner__h1 h1">O магазине</h1>
+        </div>
+    </div>
+</section>
+<section class="about-content d-flex">
+    <div class="container about-content__container d-flex">
+        <div class="about-content__info">
+            <h1 class="about-content__h1 h1">О магазине</h1>
+            <div class="about-content__text">
+                <p class="p">Интернет-магазин от фитнес-студии Fitnoteca – это не просто магазин, а место, где Вы 
+                    сможете найти то, что поможет не только поддерживать мотивацию для занятий спортом, но и поможет стать лучше и подчеркнуть только Ваши индивидуальные плюсы.</p>
+                <p class="p">Мы старались собрать для Вас самые лучшие бренды со всего мира. Которые любят все в независимости от континента.</p>
+                <p class="p">Мы всегда будем рады доставить Ваш заказ в любую точку мира, упаковав его с настоящей любовью и заботой. Ведь для нас, это не просто упаковать в коробку, а целая церемония, что бы Вы почувствовали частичку нашей души у себя в руках.</p>
+                <p class="p">До встречи в разделах нашего интернет-магазина.</p>
+            </div>
+            <div class="about-content__ps">
+                <p class="about-content__ps-text">С любовью и заботой,</p>
+                <img class="about-content__ps-img" src="img/fitnoteca_logo.svg" alt="">
+            </div>
+        </div>
+        <div class="about-content__pic d-flex">
+            <div class="about-content__pic-left">
+                <img src="img/about1.jpg" alt="" class="about-content__img">
+                <img src="img/about2.jpg" alt="" class="about-content__img">
+            </div>
+            <div class="about-content__pic-right">
+                <img src="img/about3.jpg" alt="" class="about-content__img">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="discount">
+    <div class="container discount__container">
+        <div class="discount__content">
+            <p class="discount__top">Бесплатная доставка</p>
+            <p class="discount__bottom">при заказе от <span class="clr_pink">8 000 ₽</span></p>
+        </div>
+    </div>
+</section>
+
+<section class="about-questions">
+    <div class="container about-questions__container d-flex">
+        <h2 class="about-questions__h2 h2">Частые вопросы</h2>
+        <ul class="about-questions__content">
+            <li class="about-questions__wrapper">
+                <p class="about-questions__header">Где мой заказ?</p>
+
+                <div class="about-questions__popup">
+                    <div class="about-questions__popup-wrapper">
+                        <div class="popup__close">
+                            <span class="close-line close-line1"></span>
+                            <span class="close-line close-line2"></span>
+                        </div>
+                        <p class="about-questions__popup-header">Где мой заказ?</p>
+                        <p class="about-questions__text">Отслеживать заказы можно на сайтах служб доставки, в соответствующих разделах. Информация о вашей службе доставки указана в автоматическом email-подтверждении.
+                            <br>Если у вас есть вопросы, вы всегда можете связаться с нашей службой поддержки по адресу hello@fitnoteca.ru или по телефону 89995131315
+                        </p>
+                    </div>
+                </div>    
+            </li>
+            <li class="about-questions__wrapper">
+                <p class="about-questions__header">Как отменить заказ?</p>
+                <div class="about-questions__popup">
+                    <div class="about-questions__popup-wrapper">
+                        <div class="popup__close">
+                            <span class="close-line close-line1"></span>
+                            <span class="close-line close-line2"></span>
+                        </div>
+                        <p class="about-questions__popup-header">Как отменить заказ?</p>
+                        <p class="about-questions__text">Покупатель вправе отменить оформленный заказ, связавшись с администратором студии по телефонам: 89995131315 с 10:00 по 21:00 по московскому времени, или по адресу hello@fitnoteca.ru</p>
+                    </div>
+                </div>   
+                
+            </li>
+            <li class="about-questions__wrapper">
+                <p class="about-questions__header">Могу ли я вернуть продукт?</p>
+
+                <div class="about-questions__popup">
+                    <div class="about-questions__popup-wrapper">
+                        <div class="popup__close">
+                            <span class="close-line close-line1"></span>
+                            <span class="close-line close-line2"></span>
+                        </div>
+                        <p class="about-questions__popup-header">Могу ли я вернуть продукт?</p>
+                        <p class="about-questions__text">В течение 7 дней с момента получения вы гарантированно можете вернуть полностью купленный у нас товар, если он не соответствует данным вашего заказа.
+                            <br> Под товаром надлежащего качества подразумевают товар, у которого сохранен товарный вид, упаковка, пломбы и потребительские свойства. Товар надлежащего качества можно вернуть без указанной причины.
+                            <br>Обращаем ваше внимание, что частичный возврат заказа невозможен.
+                            </p>
+                    </div>     
+                </div>
+            </li>
+            <li class="about-questions__wrapper">
+                <p class="about-questions__header">Осуществляется ли доставка в регионы и за рубеж?</p>
+                <div class="about-questions__popup">
+                    <div class="about-questions__popup-wrapper">
+                        <div class="popup__close">
+                            <span class="close-line close-line1"></span>
+                            <span class="close-line close-line2"></span>
+                        </div>
+                        <p class="about-questions__popup-header">Осуществляется ли доставка в регионы и за рубеж?</p>
+                        <p class="about-questions__text">Доставка заказов осуществляется на территории Российской Федерации и за рубеж.
+                        </p>
+                    </div>     
+                </div>
+            </li>
+            <li class="about-questions__wrapper">
+                <p class="about-questions__header">Почему моё любимое средство сняли с производства? Могу ли я ещё приобрести его?</p>
+                <div class="about-questions__popup">
+                    <div class="about-questions__popup-wrapper">
+                        <div class="popup__close">
+                            <span class="close-line close-line1"></span>
+                            <span class="close-line close-line2"></span>
+                        </div>
+                        <p class="about-questions__popup-header">Почему моё любимое средство сняли с производства? Могу ли я ещё приобрести его?</p>
+                        <p class="about-questions__text">Решения о снятии продукта с производства, а также решения о выпуске продукта или определенного его объема принимаются исходя из предпочтений клиентов и схемы покупок в конкретном месторасположении. Мы будем рады помочь вам подобрать другой продукт взамен вашего любимого средства. Вы можете посоветоваться с нашими администраторами по телефону 8 999 513 1315  с 10:00 по 22:00 по московскому времени, или по адресу hello@fitnoteca.ru
+                        </p>
+                    </div>     
+                </div>
+            </li>
+            <li class="about-questions__wrapper">
+                <p class="about-questions__header">Состав средства?</p>
+                <div class="about-questions__popup">
+                    <div class="about-questions__popup-wrapper">
+                        <div class="popup__close">
+                            <span class="close-line close-line1"></span>
+                            <span class="close-line close-line2"></span>
+                        </div>
+                        <p class="about-questions__popup-header">Состав средства?</p>
+                        <p class="about-questions__text"> Если вы хотите узнать больше об ингредиентах, входящих в состав отдельных продуктов? свяжитесь c администраторами студии: hello@fitnoteca.ru</p>
+                    </div>     
+                </div>
+            </li>
+            <li class="about-questions__wrapper">
+                <p class="about-questions__header">Можете ли вы отправить мне<br> образец товара?</p>
+                <div class="about-questions__popup">
+                    <div class="about-questions__popup-wrapper">
+                        <div class="popup__close">
+                            <span class="close-line close-line1"></span>
+                            <span class="close-line close-line2"></span>
+                        </div>
+                        <p class="about-questions__popup-header">Можете ли вы отправить мне образец товара?</p>
+                        <p class="about-questions__text"> К сожалению, образцы не подлежат распространению. Образцы доступны только в период действия специальных предложений, а также при оформлении онлайн-заказа. Если у вас возникли сомнения при подборе средств, наши администраторы с радостью помогут вам подобрать продукт. По телефону 8 999 513 13 15  с 10:00 по 22:00 по московскому времени, или по адресу hello@fitnoteca.ru
+                        </p>
+                    </div>     
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="about-feedback">
+    <form action="" class="form about-feedback__form d-flex">
+        <div class="about-feedback__caption">
+            <h3 class="about-feedback__header">Не нашли ответ на свой вопрос?</h3>
+            <p class="about-feedback__text">Опишите его здесь и мы свяжемся с вами в ближайшее время для разрешения проблемы.</p>
+        </div>
+        <div class="about-feedback__fields">
+            <div class="about-feedback__form-row d-flex">
+                <div class="about-feedback__form-element">
+                    <label for="" class="about-feedback__label form-label">Имя</label>
+                    <input type="text" class="about-feedback__input form-input" placeholder="Ваши имя и фамилия">
+                </div>
+                
+                <div class="about-feedback__form-element">
+                    <label for="" class="about-feedback__label form-label">Контактный телефон</label>
+                    <input type="tel" class="about-feedback__input form-input" placeholder="+7 (999) 999 - 99 - 99">
+                </div>
+            </div>
+            <div class="about-feedback__form-element">
+                <label for="" class="about-feedback__label form-label">Опишите вопрос</label>
+                <textarea name="message" class="about-feedback__textarea form-textarea"></textarea>
+            </div>
+        </div>
+        <div class="about-feedback__submit">
+            <p class="about-feedback__policy">Нажимая кнопку "Отправить", вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a></p>
+            <button class="about-feedback__btn btn bg_pink">отправить</button>
+        </div>
+    </form>
+</section>
+    
+    <section class="brands">
+    <div class="container brands__container">
+        <ul class="brands__list d-flex">
+            <li class="brands__item d-flex"><img src="img/Logo-Saba.png" alt="" class="brands__img"></li>
+            <li class="brands__item d-flex"><img src="img/logo-green.png" alt="" class="brands__img"></li>
+            <li class="brands__item d-flex"><img src="img/Logo-jam-bar.png" alt="" class="brands__img"></li>
+            <li class="brands__item d-flex"><img src="img/Logo-read.jpg" alt="" class="brands__img"></li>
+        </ul>
+    </div>
+</section>
+    <section class="bottom-offers">
+    <div class="container bottom-offers__container">
+        <ul class="bottom-offers__list d-flex">
+            <li class="bottom-offers__item">
+                <img src="img/bottom-offers1.jpg" alt="" class="bottom-offers__img">
+                <p class="bottom-offers__text">Спецпредложения</p>
+                <button class="bottom-offers__btn btn bg_pink">Смотреть всё</button>
+            </li>
+            <li class="bottom-offers__item">
+                <img src="img/bottom-offers2.png" alt="" class="bottom-offers__img">
+                <p class="bottom-offers__text">Новые поступления</p>
+                <button class="bottom-offers__btn btn bg_pink">Смотреть всё</button>
+            </li>
+        </ul>
+    </div>
+</section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="footer__top">
+        <div class="container">
+            <div class="footer__content d-flex">
+                <div class="footer__menu d-flex">
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-header">Косметика</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Для лица</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Для тела</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Для волос</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Длярук</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Для ног</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-header">Одежда</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Лосины</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Велосипедки</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Топы и футболки</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Комбинезоны</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Кофты и толстовки</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-header">Продукты Fitnoteca</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"> <a href="#" class="footer__menu-link">Групповые
+                                    абонементы</a></li>
+                            <li class="footer__menu-item"> <a href="#" class="footer__menu-link">Индивидуальные
+                                    тренировки</a></li>
+                            <li class="footer__menu-item"> <a href="#" class="footer__menu-link">Массаж</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Аксессуары</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-header">FitStore</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">О магазине</a></li>
+                            <li class="footer__menu-item"> <a href="#" class="footer__menu-link">Доставка</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Оплата</a></li>
+                            <li class="footer__menu-item"><a href="#"
+                                    class="footer__menu-link footer__menu-link_offer">Спецпредложения</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__text">
+                        <h3 class="footer__right-header d-flex">
+                            <svg class="footer__right-header-img">
+                                <use xlink:href="img/sprites/sprite.svg#email"></use>
+                            </svg>
+                            Будь в курсе новинок и скидок!
+                        </h3>
+                        <p class="footer__right-text">Только полезные рассылки<br>и никакого спама, мы обещаем</p>
+                    </div>
+                    <form action="" class="footer__right-form d-flex">
+                        <input type="text" class="footer__right-form-imput" placeholder="sample@sample.com">
+                        <button class="footer__right-form-btn" type="button">
+                            <svg class="footer__right-form-btn-img">
+                                <use xlink:href="img/sprites/sprite.svg#arrow_right"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__cards d-flex">
+                <img src="img/mastercard-color.png" alt="" class="footer__cards-img">
+                <img src="img/maestro-color.png" alt="" class="footer__cards-img">
+                <img src="img/visa-color.png" alt="" class="footer__cards-img">
+                <img src="img/mir-color.png" alt="" class="footer__cards-img">
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container footer__bottom-container d-flex">
+            <div class="footer__bottom-left d-flex">
+                <a href="/"><img src="img/fitnoteca_logo-white.svg" alt="" class="footer__logo"></a>
+                <span class="footer__split"></span>
+                <a href="#">
+                    <svg class="footer__inst">
+                        <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+                    </svg>
+                </a>
+            </div>
+            <a href="#" class="footer__policy">Политика конфиденциальности</a>
+            <a href="https://adwin.agency/" class="footer__adwin d-flex" target="_blank">Создано в
+                <svg class="footer__adwin-img" alt="ADWIN.Agency" class="footer__adwin-img">
+                    <use xlink:href="img/sprites/sprite.svg#Adwin-white"></use>
+                </svg></a>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/vendor.js"></script>
+<div class="cart">
+    <div class="cart__header">Заказ</div>
+    <ul class="cart__item-list">
+        <li class="cart__item">
+            <div class="cart__item-row">
+                <p class="cart__item-title">Бальзам «Невесты», 100 мл.</p>
+                <div class="add-cart">
+                    <div class="card-quantity d-flex show">
+                        <button class="card-val-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                            </svg></button>
+                        <input type="text" class="cart-count" disabled="" value="1">
+                        <button class="card-val-btn s cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <p class="cart__price">6 000 ₽</p>
+            </div>
+            <button class="cart__remove clr_blue">Удалить</button>
+        </li>
+        <li class="cart__item">
+            <div class="cart__item-row">
+                <p class="cart__item-title">Масло для тела ореха Карите Лотос/Франжипани 100 мл.</p>
+                <div class="add-cart">
+                    <div class="card-quantity d-flex show">
+                        <button class="card-val-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                            </svg></button>
+                        <input type="text" class="cart-count" disabled="" value="1">
+                        <button class="card-val-btn s cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <p class="cart__price">6 000 ₽</p>
+            </div>
+            <button class="cart__remove">Удалить</button>
+        </li>
+        <li class="cart__item">
+            <div class="cart__item-row">
+                <p class="cart__item-title">Масло для тела ореха Карите Лотос/Франжипани 100 мл.</p>
+                <div class="add-cart">
+                    <div class="card-quantity d-flex show">
+                        <button class="card-val-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                            </svg></button>
+                        <input type="text" class="cart-count" disabled="" value="1">
+                        <button class="card-val-btn s cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <p class="cart__price">6 000 ₽</p>
+            </div>
+            <button class="cart__remove">Удалить</button>
+        </li>
+        <li class="cart__item">
+            <div class="cart__item-row">
+                <p class="cart__item-title">Масло для тела ореха Карите Лотос/Франжипани 100 мл.</p>
+                <div class="add-cart">
+                    <div class="card-quantity d-flex show">
+                        <button class="card-val-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                            </svg></button>
+                        <input type="text" class="cart-count" disabled="" value="1">
+                        <button class="card-val-btn s cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <p class="cart__price">6 000 ₽</p>
+            </div>
+            <button class="cart__remove">Удалить</button>
+        </li>
+        <li class="cart__item">
+            <div class="cart__item-row">
+                <p class="cart__item-title">Масло для тела ореха Карите Лотос/Франжипани 100 мл.</p>
+                <div class="add-cart">
+                    <div class="card-quantity d-flex show">
+                        <button class="card-val-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                            </svg></button>
+                        <input type="text" class="cart-count" disabled="" value="1">
+                        <button class="card-val-btn s cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <p class="cart__price">6 000 ₽</p>
+            </div>
+            <button class="cart__remove">Удалить</button>
+        </li>
+    </ul>
+    <div class="cart__sum d-flex"><span class="cart__sum-text">Сумма </span><span class="cart__sum-val"> 19 000 ₽</span>
+    </div>
+    <div class="cart__buttons">
+        <button class="cart__resume btn bg_grey">Продолжить покупки</button>
+        <a href="#" class="cart__place btn bg_pink">Оформить заказ</a>
+    </div>
+
+</div>
+<div class="b-shadow"></div>
+</body>
+
+</html>

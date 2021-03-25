@@ -1,0 +1,144 @@
+.why{
+    padding-bottom: 112px;
+    padding-top: 149px;
+    &__content{
+        max-width: 1420px;
+        margin: 0 auto;
+       
+    }
+    &__pic{
+       position: relative;
+        &::after{
+            content: "";
+            width: 666px;
+            height: 465px;
+            background-color: transparent;
+            border: 3px solid #21303d;
+            left: 60px;
+            bottom: 67px;
+            position: absolute;
+        }
+        }
+    &__img{
+        object-fit: cover;
+        max-height: 100%;
+    }
+    &__text{
+        margin-left: auto;
+        padding-right: 139px;
+        margin-top: 36px;
+    }
+    &__item{
+        align-items: center;
+        margin-bottom: 33px;
+    }
+    &__header{
+        font-size: 40px;
+        margin-bottom: 84px;
+    }
+    &__item-img{
+        max-width: 63px;
+        max-height: 61px;
+        object-fit: contain;
+    }
+    &__item-text{
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 24px;
+        margin-left: 55px;
+    }
+ 
+}
+
+@media(max-width:1600px){
+    .why{
+        padding-top: 123px;
+        padding-bottom: 84px;
+    }
+    .why__pic{
+        width: 573px;
+        height: 415px;
+    }
+    .why__pic::after {
+        width: 562px;
+        height: 393px;
+        left: 52px;
+        bottom: 55px;
+    }
+    .why__header{
+        font-size: 30px;
+    }
+    .why__text{
+        padding-right: 133px;
+        margin-top: 4px;
+    }
+    .why__item {
+        margin-bottom: 31px;
+    }
+}
+@media(max-width:1280px){
+    .why{
+        padding-top: 86px;
+        padding-bottom: 56px;
+    }
+    .why__pic {
+        width: 454px;
+        height: 307px;
+        margin-top: 29px;
+    }
+    .why__pic::after {
+        width: 415px;
+        height: 290px;
+        left: 39px;
+        bottom: 40px;
+    }
+    .why__text{
+        padding-right: 0px;
+        margin-left: 74px;
+    }
+    .why__header{
+        margin-bottom: 59px;
+    }
+    .why__item-text{
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 49px;
+    }
+    .why__item {
+        margin-bottom: 34px;
+    }
+}
+@media(max-width:960px){
+    
+    .why__pic{
+        display: none;
+    }
+    .why__text{
+        margin: 0 auto;}
+}
+@media(max-width:660px){
+    .why{
+        padding-top: 58px;
+        padding-bottom: 49px;
+    }
+    .why__text{
+        max-width: 300px;
+    }
+    .why__item-text{
+        font-size: 16px;
+        margin-left: 17px;
+    }
+    .why__item-img {
+        max-width: 52px;
+        max-height: 50px;
+    }
+    .why__header{
+        margin-bottom: 34px;
+    }
+    .why__item {
+        margin-bottom: 22px;
+    }
+}
+@media(max-width:768px){
+
+}

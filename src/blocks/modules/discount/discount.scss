@@ -1,0 +1,39 @@
+.discount__content{
+    max-width: 667px;
+    margin: 0 auto;
+    width: 100%; 
+}
+.discount__top{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.discount__bottom{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: right;
+}
+@media(max-width:1600px){
+    .discount__top{
+        font-size: 30px;
+    }
+    .discount__bottom{
+        font-size: 30px;
+    }
+    .discount__content {
+        max-width: 511px;
+    }
+}
+@media(max-width:768px){
+    .discount__top,  .discount__bottom{
+        font-size: 22px;
+        text-align: center;
+    }
+    .discount__bottom{
+        font-size: 22px;
+    }
+    .discount__content {
+        max-width: 511px;
+    }
+}

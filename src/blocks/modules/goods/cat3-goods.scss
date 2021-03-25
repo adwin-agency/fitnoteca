@@ -1,0 +1,760 @@
+.cat3-goods{
+    padding-top: 65px;
+    padding-bottom: 94px;
+    &__container{
+        align-items: flex-start;
+    }
+    &__header{
+        margin-bottom: 29px;
+    }
+    &__wrapper-right{
+        padding-top: 17px;
+    }
+    &__workout-list{
+        max-width: 100%;
+        justify-content: space-between;
+        width: 1180px;
+        margin-bottom: 102px;
+    }
+    &__workout-item{
+        position: relative;
+        height: 300px;
+        width: 380px;
+    }
+    &__workout-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__workout-title{
+        position: absolute;
+        bottom: 39px;
+        left: 55px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+    }
+
+    &__header-massage{
+        margin-bottom: 50px;
+    }
+    &__massage-list{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 1190px;
+        margin-bottom: 75px;
+        max-width: 100%;
+    }
+    &__massage-item{
+        background-color: white;
+        width: 380px;
+        height: 320px;
+        padding: 48px 45px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+    &__massage-hedaer{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 13px;
+        & br{
+            display: none;
+        }
+    }
+    &__massage-text{
+        font-size: 13px;
+        line-height: 16px;
+        color: #949494;
+   
+    }
+    &__massage-caption{
+        height: 100px;
+    }
+    &__massage-radio-item{
+        margin-bottom: 24px;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    &__massage-price{
+        font-size: 15px;
+        font-weight: bold;
+        width: 61px;
+        display: inline-block;
+        text-align: right;
+    }
+    &__massage-old-price{
+        font-size: 12px;
+        color:#aca8c3;
+        text-decoration: line-through;
+        font-weight: bold;
+        
+    }
+    &__header-accessories{
+        margin-bottom: 39px;
+    }
+}
+.cart-btn{
+    border: none;
+    width: 101px;
+    height: 45px;
+    border-radius: 22px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    &__img{
+        fill: white;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.accessories{
+    background-color:#f8f8f8;
+    padding-top: 123px;
+    padding-bottom: 78px;
+    margin-top: 104px;
+    &__container{
+
+    }
+    &__h1{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 63px;
+    }
+    &__list{
+        flex-wrap: wrap;
+        max-width: 1240px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    &__item{
+        background-color: white;
+        width: 380px;
+        height: 450px;
+        max-width: 100%;
+        margin-bottom: 23px;
+        position: relative;
+    }
+    &__item.last-item &__bottom, &__item.last-item &__labels{
+        display: none;
+    }
+    &__item.last-item &__all-btn{
+        display: block;
+    }
+    &__item.last-item &__img-container{
+        height: 100%;
+        padding: 0px;
+    }
+    &__item.last-item &__img{
+        filter: blur(10px);
+    }
+    &__item.last-item .accessories__img-link{
+        pointer-events: none;
+    }
+    &__img-container{
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 295px;
+    }
+    &__labels{
+        position: absolute;
+        top: 27px;
+        right: 46px;
+    }
+    &__img{
+        object-fit: contain;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    &__labels-img{
+        width: 12px;
+        height: 12px;
+        padding: 12px;
+        border-radius: 50%;
+        fill: #21303d;
+        background-color: #d3e1ea;
+    }
+    &__labels-item{
+        margin-bottom: 7px;
+    }
+    &__bottom{
+        padding: 0 47px 0 43px;
+    }
+    &__category{
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+    &__title{
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 20px;
+        height: 42px;
+    }
+    &__quantity{
+        height: 45px;
+        align-items: center;
+        justify-content: space-between;
+        width: 118px;
+        display: none;
+    }
+    &__count-btn{
+        border: none;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    &__count{
+        background: none;
+        border: none;
+        width: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0px;
+        text-align: center;
+    }
+    &__price{
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+    &__old-price{
+        font-size: 15px;
+        text-decoration: line-through;
+        font-weight: 300;
+    }
+    &__row{
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__cart{
+        border: none;
+        width: 101px;
+        height: 45px;
+        border-radius: 22px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__cart-img{
+        fill: white;
+        width: 20px;
+        height: 20px;
+    }
+    &__all-btn{
+        display: none;
+        border: none;
+        position: absolute;
+        right: 50%;
+        transform: translate(50%, 0);
+        top: 200px;
+        padding: 19px 48px;
+        white-space: nowrap;
+        background-color: #e9b0b7;
+    }
+    &__all-btn span{
+        white-space: nowrap;
+    }
+}
+.subcat3-1-goods{
+    padding-top: 29px;
+    & .cat3-goods__wrapper-right {
+        padding-top: 0px;
+    }
+    & .cat3-goods__massage-caption {
+        height: 132px;
+    }
+    & .cat3-goods__massage-text{
+        height: 46px;
+    }
+    & .cat3-goods__massage-item{
+        height: 260px;
+        margin-bottom: 30px;
+    }
+}
+.subcat3-2-goods{
+    padding-bottom: 0px;
+    padding-top: 29px;
+    & .cat3-goods__wrapper-right {
+        padding-top: 0px;
+    }
+    .cat3-goods__massage-caption {
+        height: 76px;
+    }
+    .cat3-goods__massage-radio-item {
+        margin-bottom: 20px;
+    }
+    .cat3-goods__massage-item{
+        display: flex;
+        flex-direction: column;
+        height: 360px;
+        padding-bottom: 34px;
+        margin-bottom: 28px;
+    }
+    .cat3-goods__massage-radio{
+        flex-grow: 1;
+    }
+}
+.subcat3-3-goods{
+    padding-top: 29px;
+    padding-bottom: 54px;
+    & .cat3-goods__wrapper-right {
+        padding-top: 0px;
+    }
+    & .cat3-goods__massage-caption {
+        height: 102px;
+    }
+    & .cat3-goods__massage-text{
+        height: 46px;
+    }
+    & .cat3-goods__massage-item{
+        height: 260px;
+        margin-bottom: 30px;
+        padding-top: 57px;
+    }
+}
+.cat3-goods__massage-item.hidden{
+    height: 0px;
+    overflow: hidden;
+    padding: 0;
+}
+.subcat3-1-goods__offer{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 16px;
+}
+.subcat3-1-goods__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subcat3-1-goods__cost{
+    display: flex;
+    align-items: center;
+}
+.subcat3-1-goods__price{
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 8px;
+    white-space: nowrap;
+}
+.subcat3-1-goods__old-price{
+    text-decoration: line-through;
+    font-size: 11px;
+    font-weight: bold;
+    color: #aca8c3;
+}
+.subcat3-3-goods__offer{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 16px;
+}
+.subcat3-3-goods__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subcat3-3-goods__cost{
+    display: flex;
+    align-items: center;
+}
+.subcat3-3-goods__price{
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.subcat3-3-goods__old-price{
+    text-decoration: line-through;
+    font-size: 11px;
+    font-weight: bold;
+    color: #aca8c3;
+}
+@media(max-width:1600px){
+    .accessories__h1{
+        font-size: 30px;
+        margin-bottom: 46px;
+    }
+    .accessories {
+        margin-top: 63px;
+        padding-top: 84px;
+    }
+    .accessories__item{
+        width: 300px;
+        height: 355px;
+        margin-bottom: 19px;
+    }
+    .accessories__img-container{
+        height: 214px;
+    }
+    .accessories__labels {
+        right: 26px;
+    }
+    .accessories__bottom {
+        padding: 0 27px 0 23px;
+    }
+    .accessories {
+        padding-top: 28px;
+    }
+    .accessories__all-btn{
+        top: 151px;
+    }
+    .cat3-goods {
+        padding-top: 29px;
+        padding-bottom: 94px;
+    }
+    .cat3-goods {
+    padding-top: 29px;
+    padding-bottom: 94px;
+    }
+    .cat3-goods__workout-item {
+        height: 270px;
+        width: 300px;
+    }
+    .cat3-goods__wrapper-right{
+        width: 940px;
+        padding-top: 22px;
+        overflow: auto;
+    }
+    .cat3__filter{
+        margin-right: 30px;
+    }
+    .cat3-goods__header {
+        margin-bottom: 23px;
+    }
+    .cat3-goods__workout-list{
+        margin-bottom: 82px;
+    }
+    .cat3-goods__workout-title{
+        bottom: 30px;
+        left: 44px;
+    }
+    .cat3__filter{
+        & .filter__category-header{
+            margin-bottom: 33px;
+        }
+        & .filter__category-item {
+            margin-bottom: 22px;
+        }
+    }
+    .cat3-goods__header-massage {
+        margin-bottom: 31px;
+    }
+    .cat3-goods__massage-item{
+        width: 300px;
+        height: 320px;
+        padding: 47px 34px 47px 34px;
+    }
+    .cat3-goods__massage-text{
+       
+    }
+    .cat3-goods__massage-hedaer br{
+        display: block;
+    }
+    .cat3-goods__massage-caption{
+        height: 111px;
+    }
+    .cat3-goods__massage-list{
+        margin-bottom: 56px;
+    }
+    .cat3-goods__header-accessories {
+        margin-bottom: 28px;
+    }
+    .subcat3-1-goods .cat3-goods__massage-text {
+        height: 55px;
+    }
+    .subcat3-3-goods .cat3-goods__massage-text {
+        height: 55px;
+    }
+    .subcat3-3-goods .cat3-goods__massage-caption {
+        margin-bottom: 10px;
+        height: 111px;
+    }
+    .subcat3-2-goods .cat3-goods__massage-prices {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .subcat3-2-goods .cat3-goods__massage-old-price{
+        margin-bottom: 4px;
+    }
+    .subcat3-2-goods .cat3-goods__massage-radio-item {
+        margin-bottom: 14px;
+    }
+}
+@media(max-width:1280px){
+    .accessories{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .accessories {
+        padding-top: 37px;
+    }
+    .accessories__h1{
+        font-size: 26px;
+    }
+    .accessories{
+        padding-top: 96px;
+    }
+    .accessories__item{
+        width: 300px;
+        height: 355px;
+        margin-bottom: 20px;
+    }
+    .accessories__labels{
+        right: 26px;
+    }
+    .accessories__img-container{
+        height: 214px;
+    }
+    .accessories__bottom {
+        padding: 0 27px 0 23px;
+    }
+    .accessories__all-btn{
+        top: 154px;
+    }
+    .cat3-goods__wrapper-right{
+        width: 620px;
+        max-width: 100%;
+    }
+    .cat3-goods__workout-list{
+        flex-wrap: wrap;
+    } 
+    .cat3-goods{
+        padding-top: 50px;
+        padding-bottom: 58px;
+    }
+    .cat3-goods__wrapper-right{
+        padding-top: 0px;
+    }
+    .cat3-goods__workout-item {
+        margin-bottom: 22px;
+    }
+    .cat3-goods__workout-list {
+        margin-bottom: 58px;
+    }
+    .cat3-goods__massage-list {
+        margin-bottom: 48px;
+    }
+}
+@media(max-width:960px){
+    .accessories__list{
+        max-width: 610px;
+    }
+    .accessories__item {
+        margin-bottom: 10px;
+    }
+    .accessories__item.last-item{
+    }
+    .accessories__item{
+        width: calc(33% - 10px);
+        //max-width: 240px;
+        min-width: 160px;
+        height: 330px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .accessories__img-container {
+        height: 157px;
+    }
+    .accessories__labels {
+        right: 10px;
+        top: 10px;
+    }
+    .accessories__labels-img {
+        padding: 9px;
+    }
+    .accessories__bottom {
+        padding: 0 10px 0 10px;
+    }
+    .accessories__category{
+        font-size: 12px;
+    }
+    .accessories__title{
+        font-size: 12px;
+        line-height: 14px;
+        height: 55px;
+    }
+    .accessories__row{
+        flex-wrap: wrap;
+    }
+    .accessories__cart{
+        width: 100%;
+    }
+    .accessories__prices{
+        margin-bottom: 10px;
+    }
+    .accessories__price{
+        font-size: 14px;
+    }
+    .accessories__old-price{
+        font-size: 14px;
+    }
+    .accessories__list{
+        justify-content: flex-end;
+    }
+    .accessories__all-mob{
+        display: block;
+    }
+    .accessories__all-desc{
+        display: none;
+    }
+    .accessories__all-btn {
+        top: 121px;
+    }
+    .accessories__quantity{
+        margin: 0 auto;
+    }
+    .cat3-goods__workout-item, .cat3-goods__massage-item{
+        width: calc(50% - 10px);
+        min-width: 223px;
+        height: 230px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .cat3-goods__massage-item{
+        padding: 27px 20px 24px 20px;
+        height: 290px;
+    }
+    .cat3-goods__header, .cat3-goods__header-massage, .cat3-goods__header-accessories{
+        margin-left: 10px;
+    }
+    .subcat3-1-goods__cost{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .subcat3-1-goods__price{
+        margin-bottom: 5px;
+    }
+    .subcat3-3-goods__cost{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .subcat3-3-goods__price{
+        margin-bottom: 5px;
+    }
+}
+@media(max-width:870px){
+    .cat3-goods__workout-item, .cat3-goods__massage-item{
+        width: calc(100% - 10px);
+    }
+    .cat3-goods__massage-item{
+        height: 305px;
+        padding: 47px 34px 47px 34px;
+    }
+    .cat3-goods__workout-item{
+        height: 170px;
+    }
+}
+@media(max-width:865px){
+
+    .accessories__item {
+        width: calc(50% - 10px);
+    }
+    }
+@media(max-width:768px){
+    .accessories__list {
+        justify-content: space-between;
+        max-width: 322px;
+        margin: 0 auto;
+    }
+    .accessories__item {
+        width: 160px;
+        margin-left: 0;
+        margin-bottom: 2px;
+
+    }
+ 
+    .accessories__list{
+        margin-left: -11px;
+        margin-right: -11px;
+    }
+    .cat3-goods__container{
+        flex-direction: column;
+    }
+    .cat3-goods__wrapper-right{
+        max-width: 300px;
+        margin: 0 auto;
+    /* padding: 0 10px; */
+        box-sizing: border-box;
+        overflow: visible;
+    }
+    .cat3-goods__header, .cat3-goods__header-massage, .cat3-goods__header-accessories{
+        margin-left: 0px;
+    }
+    .cat3-goods__workout-item, .cat3-goods__massage-item{
+        margin-left: 0px;
+    }
+    .cat3-goods {
+        padding-top: 19px;
+        padding-bottom: 58px;
+    }
+    .cat3-goods__header{
+        margin-bottom: 18px;
+    }
+    .cat3-goods__workout-item, .cat3-goods__massage-item{
+        width: 100%;
+    }
+    .cat3-goods__workout-item{
+        margin-bottom: 14px;
+    }
+    .cat3-goods__workout-list {
+        margin-bottom: 35px;
+    }
+    .cat3-goods__header-massage{
+        margin-bottom: 14px;
+    }
+    .cat3-goods__massage-caption {
+        height: auto;
+    }
+    .cat3-goods__massage-text{
+        margin-bottom: 28px;
+    }
+    .cat3-goods__massage-item{
+        height: auto;
+        padding: 47px 34px 41px 34px;
+    }
+    .cat3-goods__massage-list {
+        margin-bottom: 7px;
+    }
+    .subcat3-1-goods .cat3-goods__massage-caption {
+        height: auto;
+    }
+    .subcat3-1-goods .cat3-goods__massage-text {
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .subcat3-1-goods__bottom{
+        margin-top: 25px;
+    }
+    .subcat3-3-goods .cat3-goods__massage-caption {
+        height: auto;
+    }
+    .subcat3-3-goods .cat3-goods__massage-text {
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .subcat3-3-goods__bottom{
+        margin-top: 25px;
+    }
+}
+@media(max-width:660px){
+    .accessories {
+        padding-top: 53px;
+        padding-bottom: 42px;
+    }
+    .accessories__h1 {
+        font-size: 20px;
+        margin-bottom: 23px;
+    }
+
+
+}

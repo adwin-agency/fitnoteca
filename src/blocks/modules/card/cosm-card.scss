@@ -1,0 +1,127 @@
+.cosm-card{
+    padding-top: 30px;
+    padding-bottom: 70px;
+    margin-bottom: 109px;
+    &__container{
+        max-width: 1420px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    &__pic{
+        background-color: white;
+        &-item{
+            width: 640px;
+            height: 550px;
+            padding: 43px 103px 73px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    &__pic-link{
+        position: absolute;
+        right: 23px;
+        top: 24px;
+    }
+    &__pic-link-img{
+        height: 20px;
+        width: 20px;
+    }
+    &__labels{
+
+    }
+    &__content{
+        width: 700px;
+        max-width: 100%;
+        padding-top: 10px;
+    }
+
+}
+@media(max-width:1600px){
+    .cosm-card__pic-item{
+        height: 500px;
+        width: 580px;
+        padding: 13px 83px 53px 63px;
+    }
+    .cosm-card__pic-link {
+        right: 42px;
+        top: 22px;
+    }
+    .cosm-card__content{
+        width: 620px;
+    }
+    .cosm-card {
+        padding-bottom: 64px;
+        margin-bottom: 76px;
+    }
+}
+@media(max-width:1280px){
+    .cosm-card__pic-item{
+        height: 417px;
+        width: 480px;
+        padding: 13px 73px 49px 51px;
+    }
+    .cosm-card__pic-link {
+        right: 63px;
+        top: 23px;
+    }
+    .cosm-card__content {
+        width: 380px;
+        max-width: 100%;
+    }
+    .cosm-card__content {
+        padding-top: 6px;
+    }
+    .cosm-card{
+        padding-bottom: 40px;
+        margin-bottom: 106px;
+    }
+}
+@media(max-width:960px){
+    .cosm-card__content{
+        width: 100%;
+        margin-left: 30px;
+    }
+
+
+}
+@media(max-width:768px){
+    .cosm-card{
+        padding-top:20px;
+    }
+    .cosm-card__pic-link{
+        display: none;
+    }
+    .cosm-card__container{
+        flex-direction: column;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    .cosm-card__content{
+        margin-left: 0px;
+    }
+    .cosm-card__pic-item{
+        width: 100%;
+    }
+    .cosm-card__pic{
+        margin-left: -10px;
+        margin-right: -10px;
+        width: calc(100% + 20px);
+    }
+    .cosm-card {
+        padding-bottom: 25px;
+        margin-bottom: 64px;
+    }
+    .cosm-popular {
+        padding-top: 30px;
+    }
+    .cosm-card__pic-item {
+        padding: 3px 6px 8px;
+    }
+}

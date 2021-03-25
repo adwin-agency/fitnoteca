@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f3f4f9;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="done_mini" class="cls-1" d="M1510,817a10,10,0,1,1,10.01-10A10,10,0,0,1,1510,817Zm0-18a8,8,0,1,0,8.01,8A8.011,8.011,0,0,0,1510,799Zm-1.16,11.985h0L1504.99,807l1.54-1.6,2.31,2.394,4.61-4.788,1.54,1.6-6.15,6.384h0Z" transform="translate(-1500 -797)"/>
+</svg>

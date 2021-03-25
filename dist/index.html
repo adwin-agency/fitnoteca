@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>fitstore</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="header__row d-flex">
+                <div class="header__burger">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </div>
+                <div class="header__logo">
+                    <a href="/"><img src="img/fitnoteca_logo.svg" alt=""></a>
+                </div>
+                <nav class="header__nav">
+                    <div class="nav-container">
+                        <ul class="header__menu d-flex">
+                            <li class="header__menu-item header__menu-item_with-child">
+                                <a class="header__link">Каталог</a>
+                                <section class="dropdown">
+                                    <div class="dropdown__container">
+                                        <div class="dropdown__menu-container d-flex">
+                                            <div class="dropdown__wrapper">
+                                                <a href="cat-category1.html" class="dropdown__header">Косметика</a>
+                                                <ul class="dropdown__menu">
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для лица</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для тела</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для рук</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для ног</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для волос</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown__wrapper">
+                                                <a href="cat-category2.html" class="dropdown__header">Одежда</a>
+                                                <ul class="dropdown__menu">
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Лосины</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Велосипедки</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Топы и футболки</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Комбинезоны</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Кофты и толстовки</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown__wrapper">
+                                                <a href="cat-category3.html" class="dropdown__header">Продукты
+                                                    Fitnoteca</a>
+                                                <ul class="dropdown__menu">
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory3-1.html"
+                                                            class="dropdown__menu-link">Групповые абонементы</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory3-2.html"
+                                                            class="dropdown__menu-link">Индивидуальные тренировки</a>
+                                                    </li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory3-3.html"
+                                                            class="dropdown__menu-link">Массаж</a></li>
+                                                    <li class="dropdown__menu-item"><a href="#"
+                                                            class="dropdown__menu-link">Аксессуары</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__banner">
+                                            <a href="/specials.html" class="dropdown__banner-link">Спецпредложения
+                                                <svg class="dropdown__banner-link-img">
+                                                    <use xlink:href="img/sprites/sprite.svg#arrow_right-menu"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="header__menu-item"><a class="header__link" href="payment.html">Оплата</a></li>
+                            <li class="header__menu-item"><a class="header__link" href="delivery.html">Доставка</a></li>
+                            <li class="header__menu-item"><a class="header__link" href="about.html">О магазине</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header__icons d-flex">
+                    <a href="#">
+                        <svg class="header__icons-img inst">
+                            <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <span class="header__icons-split"></span>
+                    <!--
+                <svg class="header__icons-img">
+                    <use xlink:href="img/sprites/sprite.svg#search_left"></use>
+                </svg>-->
+                    <div class="cart-icon__wrap active">
+                        <svg class="header__icons-img" id="cart-icon">
+                            <use xlink:href="img/sprites/sprite.svg#cart"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<main class="main">
+    <section class="main-banner">
+    <div class="container main-banner__container">
+        <h1 class="main-banner__header h1">Ваш личный <br>
+            интернет-магазин товаров <br>
+            <span class="clr_pink">для спорта<span class="clr_blue">&</span>здоровья</span></h1>
+            <p class="main-banner__text p">Выбор профессионалов из студии Fitnoteca</p>
+            <a href="#main-catalog" class="main-banner__link">Изучить ассортимент</a>
+    </div>
+</section>
+    <sections class="main-catalog" id="main-catalog">
+    <div class="container main-catalog__container">
+        <ul class="main-catalog__list d-flex">
+            <li class="main-catalog__list-item">
+                <img src="img/cat1.jpg" alt="" class="main-catalog__item-img">
+                <a href="#" class="main-catalog__item-btn btn bg_blue">Косметика</a>
+            </li>
+            <li class="main-catalog__list-item">
+                <img src="img/cat2.jpg" alt="" class="main-catalog__item-img">
+                <a href="#" class="main-catalog__item-btn btn bg_blue">Одежда</a>
+            </li>
+            <li class="main-catalog__list-item">
+                <img src="img/cat3.jpg" alt="" class="main-catalog__item-img">
+                <a href="#" class="main-catalog__item-btn btn bg_blue">Продукты Fitnoteca</a>
+            </li>
+        </ul>
+    </div>
+</sections>
+    <section class="discount">
+    <div class="container discount__container">
+        <div class="discount__content">
+            <p class="discount__top">Бесплатная доставка</p>
+            <p class="discount__bottom">при заказе от <span class="clr_pink">8 000 ₽</span></p>
+        </div>
+    </div>
+</section>
+    <section class="cat1-goods main-goods">
+    <div class="container cat1-goods__container ">
+        <h1 class="cat1-goods__h1 h1">Наши спецпредложения</h1>
+        <ul class="cat1-goods__list d-flex">
+            <li class="cat1-goods__item">
+                <a href="#" class="cat1-goods__img-link">
+                    <div class="cat1-goods__img-container">
+                        <img src="img/example-spec2.jpg" alt="" class="cat1-goods__img">
+                        <ul class="cat1-goods__labels">
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#star_favorite"></use>
+                                </svg>
+                                <span class="lables-caption">Хит продаж</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#tag_fill"></use>
+                                </svg>
+                                <span class="lables-caption">Распродажа</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#megaphone"></use>
+                                </svg>
+                                <span class="lables-caption">Популярное</span>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <div class="cat1-goods__bottom">
+                    <p class="cat1-goods__category clr_violent">Косметика для тела</p>
+                    <p class="cat1-goods__title">Бальзам «Невесты», 100 мл.</p>
+                    <div class="cat1-goods__row d-flex">
+                        <div class="cat1-goods__prices">
+                            <span class="cat1-goods__price">6 000 ₽</span>
+                            <span class="cat1-goods__old-price">8 000 ₽</span>
+                        </div>
+                        <div class="add-cart">
+                            <div class="cat1-goods__quantity card-quantity d-flex">
+                                <button class="cat1-goods__count-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                                    </svg></button>
+                                <input type="text" class="cat1-goods__count cart-count" disabled value="1">
+                                <button class="cat1-goods__count-btn cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                                    </svg></button>
+                            </div>
+                            <button class="cat1-goods__cart btn bg_blue d-flex add-to-cart">
+                                <svg class="cat1-goods__cart-img">
+                                    <use xlink:href="img/sprites/sprite.svg#shopping_cart_plus_round"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="cat1-goods__all-btn btn bg_pink">Смотреть всё</button>
+            </li>
+            <li class="cat1-goods__item">
+                <a href="#" class="cat1-goods__img-link">
+                    <div class="cat1-goods__img-container">
+                        <img src="img/example-spec3.jpg" alt="" class="cat1-goods__img">
+                        <ul class="cat1-goods__labels">
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#star_favorite"></use>
+                                </svg>
+                                <span class="lables-caption">Хит продаж</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#tag_fill"></use>
+                                </svg>
+                                <span class="lables-caption">Распродажа</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#megaphone"></use>
+                                </svg>
+                                <span class="lables-caption">Популярное</span>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <div class="cat1-goods__bottom">
+                    <p class="cat1-goods__category clr_violent">Косметика для тела</p>
+                    <p class="cat1-goods__title">Парфюмерный лосьон-спрей для тела Зеленый чай/Имбирь 200 мл.</p>
+                    <div class="cat1-goods__row d-flex">
+                        <div class="cat1-goods__prices">
+                            <span class="cat1-goods__price">6 000 ₽</span>
+                            <span class="cat1-goods__old-price">8 000 ₽</span>
+                        </div>
+                        <div class="add-cart">
+                            <div class="cat1-goods__quantity card-quantity d-flex">
+                                <button class="cat1-goods__count-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                                    </svg></button>
+                                <input type="text" class="cat1-goods__count cart-count" disabled value="1">
+                                <button class="cat1-goods__count-btn cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                                    </svg></button>
+                            </div>
+                            <button class="cat1-goods__cart btn bg_blue d-flex add-to-cart">
+                                <svg class="cat1-goods__cart-img">
+                                    <use xlink:href="img/sprites/sprite.svg#shopping_cart_plus_round"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="cat1-goods__all-btn btn bg_pink">Смотреть всё</button>
+            </li>
+            <li class="cat1-goods__item">
+                <a href="#" class="cat1-goods__img-link">
+                    <div class="cat1-goods__img-container">
+                        <img src="img/example-spec2.jpg" alt="" class="cat1-goods__img">
+                        <ul class="cat1-goods__labels">
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#star_favorite"></use>
+                                </svg>
+                                <span class="lables-caption">Хит продаж</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#tag_fill"></use>
+                                </svg>
+                                <span class="lables-caption">Распродажа</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#megaphone"></use>
+                                </svg>
+                                <span class="lables-caption">Популярное</span>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <div class="cat1-goods__bottom">
+                    <p class="cat1-goods__category clr_violent">Косметика для тела</p>
+                    <p class="cat1-goods__title">Бальзам «Невесты», 100 мл.</p>
+                    <div class="cat1-goods__row d-flex">
+                        <div class="cat1-goods__prices">
+                            <span class="cat1-goods__price">6 000 ₽</span>
+                            <span class="cat1-goods__old-price">8 000 ₽</span>
+                        </div>
+                        <div class="add-cart">
+                            <div class="cat1-goods__quantity card-quantity d-flex">
+                                <button class="cat1-goods__count-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                                    </svg></button>
+                                <input type="text" class="cat1-goods__count cart-count" disabled value="1">
+                                <button class="cat1-goods__count-btn cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                                    </svg></button>
+                            </div>
+                            <button class="cat1-goods__cart btn bg_blue d-flex add-to-cart">
+                                <svg class="cat1-goods__cart-img">
+                                    <use xlink:href="img/sprites/sprite.svg#shopping_cart_plus_round"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="cat1-goods__all-btn btn bg_pink">Смотреть всё</button>
+            </li>
+            <li class="cat1-goods__item">
+                <a href="#" class="cat1-goods__img-link">
+                    <div class="cat1-goods__img-container">
+                        <img src="img/example-spec2.jpg" alt="" class="cat1-goods__img">
+                        <ul class="cat1-goods__labels">
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#star_favorite"></use>
+                                </svg>
+                                <span class="lables-caption">Хит продаж</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#tag_fill"></use>
+                                </svg>
+                                <span class="lables-caption">Распродажа</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#megaphone"></use>
+                                </svg>
+                                <span class="lables-caption">Популярное</span>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <div class="cat1-goods__bottom">
+                    <p class="cat1-goods__category clr_violent">Косметика для тела</p>
+                    <p class="cat1-goods__title">Бальзам «Невесты», 100 мл.</p>
+                    <div class="cat1-goods__row d-flex">
+                        <div class="cat1-goods__prices">
+                            <span class="cat1-goods__price">6 000 ₽</span>
+                            <span class="cat1-goods__old-price">8 000 ₽</span>
+                        </div>
+                        <div class="add-cart">
+                            <div class="cat1-goods__quantity card-quantity d-flex">
+                                <button class="cat1-goods__count-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                                    </svg></button>
+                                <input type="text" class="cat1-goods__count cart-count" disabled value="1">
+                                <button class="cat1-goods__count-btn cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                                    </svg></button>
+                            </div>
+                            <button class="cat1-goods__cart btn bg_blue d-flex add-to-cart">
+                                <svg class="cat1-goods__cart-img">
+                                    <use xlink:href="img/sprites/sprite.svg#shopping_cart_plus_round"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="cat1-goods__all-btn btn bg_pink">Смотреть всё</button>
+            </li>
+            <li class="cat1-goods__item">
+                <a href="#" class="cat1-goods__img-link">
+                    <div class="cat1-goods__img-container">
+                        <img src="img/example-spec3.jpg" alt="" class="cat1-goods__img">
+                        <ul class="cat1-goods__labels">
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#star_favorite"></use>
+                                </svg>
+                                <span class="lables-caption">Хит продаж</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#tag_fill"></use>
+                                </svg>
+                                <span class="lables-caption">Распродажа</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#megaphone"></use>
+                                </svg>
+                                <span class="lables-caption">Популярное</span>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <div class="cat1-goods__bottom">
+                    <p class="cat1-goods__category clr_violent">Косметика для тела</p>
+                    <p class="cat1-goods__title">Парфюмерный лосьон-спрей для тела Зеленый чай/Имбирь 200 мл.</p>
+                    <div class="cat1-goods__row d-flex">
+                        <div class="cat1-goods__prices">
+                            <span class="cat1-goods__price">6 000 ₽</span>
+                            <span class="cat1-goods__old-price">8 000 ₽</span>
+                        </div>
+                        <div class="add-cart">
+                            <div class="cat1-goods__quantity card-quantity d-flex">
+                                <button class="cat1-goods__count-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                                    </svg></button>
+                                <input type="text" class="cat1-goods__count cart-count" disabled value="1">
+                                <button class="cat1-goods__count-btn cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                                    </svg></button>
+                            </div>
+                            <button class="cat1-goods__cart btn bg_blue d-flex add-to-cart">
+                                <svg class="cat1-goods__cart-img">
+                                    <use xlink:href="img/sprites/sprite.svg#shopping_cart_plus_round"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="cat1-goods__all-btn btn bg_pink">Смотреть всё</button>
+            </li>
+            <li class="cat1-goods__item">
+                <a href="#" class="cat1-goods__img-link">
+                    <div class="cat1-goods__img-container">
+                        <img src="img/example-spec2.jpg" alt="" class="cat1-goods__img">
+                        <ul class="cat1-goods__labels">
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#star_favorite"></use>
+                                </svg>
+                                <span class="lables-caption">Хит продаж</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#tag_fill"></use>
+                                </svg>
+                                <span class="lables-caption">Распродажа</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#megaphone"></use>
+                                </svg>
+                                <span class="lables-caption">Популярное</span>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <div class="cat1-goods__bottom">
+                    <p class="cat1-goods__category clr_violent">Косметика для тела</p>
+                    <p class="cat1-goods__title">Бальзам «Невесты», 100 мл.</p>
+                    <div class="cat1-goods__row d-flex">
+                        <div class="cat1-goods__prices">
+                            <span class="cat1-goods__price">6 000 ₽</span>
+                            <span class="cat1-goods__old-price">8 000 ₽</span>
+                        </div>
+                        <div class="add-cart">
+                            <div class="cat1-goods__quantity card-quantity d-flex">
+                                <button class="cat1-goods__count-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                                    </svg></button>
+                                <input type="text" class="cat1-goods__count cart-count" disabled value="1">
+                                <button class="cat1-goods__count-btn cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                                    </svg></button>
+                            </div>
+                            <button class="cat1-goods__cart btn bg_blue d-flex add-to-cart">
+                                <svg class="cat1-goods__cart-img">
+                                    <use xlink:href="img/sprites/sprite.svg#shopping_cart_plus_round"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="cat1-goods__all-btn btn bg_pink">Смотреть всё</button>
+            </li>
+            <li class="cat1-goods__item">
+                <a href="#" class="cat1-goods__img-link">
+                    <div class="cat1-goods__img-container">
+                        <img src="img/example-spec3.jpg" alt="" class="cat1-goods__img">
+                        <ul class="cat1-goods__labels">
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#star_favorite"></use>
+                                </svg>
+                                <span class="lables-caption">Хит продаж</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#tag_fill"></use>
+                                </svg>
+                                <span class="lables-caption">Распродажа</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#megaphone"></use>
+                                </svg>
+                                <span class="lables-caption">Популярное</span>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <div class="cat1-goods__bottom">
+                    <p class="cat1-goods__category clr_violent">Косметика для тела</p>
+                    <p class="cat1-goods__title">Бальзам «Невесты», 100 мл.</p>
+                    <div class="cat1-goods__row d-flex">
+                        <div class="cat1-goods__prices">
+                            <span class="cat1-goods__price">6 000 ₽</span>
+                            <span class="cat1-goods__old-price">8 000 ₽</span>
+                        </div>
+                        <div class="add-cart">
+                            <div class="cat1-goods__quantity card-quantity d-flex">
+                                <button class="cat1-goods__count-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                                    </svg></button>
+                                <input type="text" class="cat1-goods__count cart-count" disabled value="1">
+                                <button class="cat1-goods__count-btn cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                                    </svg></button>
+                            </div>
+                            <button class="cat1-goods__cart btn bg_blue d-flex add-to-cart">
+                                <svg class="cat1-goods__cart-img">
+                                    <use xlink:href="img/sprites/sprite.svg#shopping_cart_plus_round"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="cat1-goods__all-btn btn bg_pink">Смотреть всё</button>
+            </li>
+            <li class="cat1-goods__item">
+                <a href="#" class="cat1-goods__img-link">
+                    <div class="cat1-goods__img-container">
+                        <img src="img/example-spec4.jpg" alt="" class="cat1-goods__img">
+                        <ul class="cat1-goods__labels">
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#star_favorite"></use>
+                                </svg>
+                                <span class="lables-caption">Хит продаж</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#tag_fill"></use>
+                                </svg>
+                                <span class="lables-caption">Распродажа</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#megaphone"></use>
+                                </svg>
+                                <span class="lables-caption">Популярное</span>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <div class="cat1-goods__bottom">
+                    <p class="cat1-goods__category clr_violent">Косметика для тела</p>
+                    <p class="cat1-goods__title">Бальзам «Невесты», 100 мл.</p>
+                    <div class="cat1-goods__row d-flex">
+                        <div class="cat1-goods__prices">
+                            <span class="cat1-goods__price">6 000 ₽</span>
+                            <span class="cat1-goods__old-price">8 000 ₽</span>
+                        </div>
+                        <div class="add-cart">
+                            <div class="cat1-goods__quantity card-quantity d-flex">
+                                <button class="cat1-goods__count-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                                    </svg></button>
+                                <input type="text" class="cat1-goods__count cart-count" disabled value="1">
+                                <button class="cat1-goods__count-btn cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                                    </svg></button>
+                            </div>
+                            <button class="cat1-goods__cart btn bg_blue d-flex add-to-cart">
+                                <svg class="cat1-goods__cart-img">
+                                    <use xlink:href="img/sprites/sprite.svg#shopping_cart_plus_round"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="cat1-goods__all-btn btn bg_pink">Смотреть всё</button>
+            </li>
+            <li class="cat1-goods__item">
+                <a href="#" class="cat1-goods__img-link">
+                    <div class="cat1-goods__img-container">
+                        <img src="img/example-spec4.jpg" alt="" class="cat1-goods__img">
+                        <ul class="cat1-goods__labels">
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#star_favorite"></use>
+                                </svg>
+                                <span class="lables-caption">Хит продаж</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#tag_fill"></use>
+                                </svg>
+                                <span class="lables-caption">Распродажа</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#megaphone"></use>
+                                </svg>
+                                <span class="lables-caption">Популярное</span>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <div class="cat1-goods__bottom">
+                    <p class="cat1-goods__category clr_violent">Косметика для тела</p>
+                    <p class="cat1-goods__title">Бальзам «Невесты», 100 мл.</p>
+                    <div class="cat1-goods__row d-flex">
+                        <div class="cat1-goods__prices">
+                            <span class="cat1-goods__price">6 000 ₽</span>
+                            <span class="cat1-goods__old-price">8 000 ₽</span>
+                        </div>
+                        <div class="add-cart">
+                            <div class="cat1-goods__quantity card-quantity d-flex">
+                                <button class="cat1-goods__count-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                                    </svg></button>
+                                <input type="text" class="cat1-goods__count cart-count" disabled value="1">
+                                <button class="cat1-goods__count-btn cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                                    </svg></button>
+                            </div>
+                            <button class="cat1-goods__cart btn bg_blue d-flex add-to-cart">
+                                <svg class="cat1-goods__cart-img">
+                                    <use xlink:href="img/sprites/sprite.svg#shopping_cart_plus_round"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="cat1-goods__all-btn btn bg_pink">Смотреть всё</button>
+            </li>
+            <li class="cat1-goods__item">
+                <a href="#" class="cat1-goods__img-link">
+                    <div class="cat1-goods__img-container">
+                        <img src="img/example-spec5.jpg" alt="" class="cat1-goods__img">
+                        <ul class="cat1-goods__labels">
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#star_favorite"></use>
+                                </svg>
+                                <span class="lables-caption">Хит продаж</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#tag_fill"></use>
+                                </svg>
+                                <span class="lables-caption">Распродажа</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#megaphone"></use>
+                                </svg>
+                                <span class="lables-caption">Популярное</span>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <div class="cat1-goods__bottom">
+                    <p class="cat1-goods__category clr_violent">Косметика для тела</p>
+                    <p class="cat1-goods__title">Бальзам «Невесты», 100 мл.</p>
+                    <div class="cat1-goods__row d-flex">
+                        <div class="cat1-goods__prices">
+                            <span class="cat1-goods__price">6 000 ₽</span>
+                            <span class="cat1-goods__old-price">8 000 ₽</span>
+                        </div>
+                        <div class="add-cart">
+                            <div class="cat1-goods__quantity card-quantity d-flex">
+                                <button class="cat1-goods__count-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                                    </svg></button>
+                                <input type="text" class="cat1-goods__count cart-count" disabled value="1">
+                                <button class="cat1-goods__count-btn cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                                    </svg></button>
+                            </div>
+                            <button class="cat1-goods__cart btn bg_blue d-flex add-to-cart">
+                                <svg class="cat1-goods__cart-img">
+                                    <use xlink:href="img/sprites/sprite.svg#shopping_cart_plus_round"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="cat1-goods__all-btn btn bg_pink">Смотреть всё</button>
+            </li>
+            <li class="cat1-goods__item">
+                <a href="#" class="cat1-goods__img-link">
+                    <div class="cat1-goods__img-container">
+                        <img src="img/example-spec4.jpg" alt="" class="cat1-goods__img">
+                        <ul class="cat1-goods__labels">
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#star_favorite"></use>
+                                </svg>
+                                <span class="lables-caption">Хит продаж</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#tag_fill"></use>
+                                </svg>
+                                <span class="lables-caption">Распродажа</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#megaphone"></use>
+                                </svg>
+                                <span class="lables-caption">Популярное</span>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <div class="cat1-goods__bottom">
+                    <p class="cat1-goods__category clr_violent">Косметика для тела</p>
+                    <p class="cat1-goods__title">Бальзам «Невесты», 100 мл.</p>
+                    <div class="cat1-goods__row d-flex">
+                        <div class="cat1-goods__prices">
+                            <span class="cat1-goods__price">6 000 ₽</span>
+                            <span class="cat1-goods__old-price">8 000 ₽</span>
+                        </div>
+                        <div class="add-cart">
+                            <div class="cat1-goods__quantity card-quantity d-flex">
+                                <button class="cat1-goods__count-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                                    </svg></button>
+                                <input type="text" class="cat1-goods__count cart-count" disabled value="1">
+                                <button class="cat1-goods__count-btn cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                                    </svg></button>
+                            </div>
+                            <button class="cat1-goods__cart btn bg_blue d-flex add-to-cart">
+                                <svg class="cat1-goods__cart-img">
+                                    <use xlink:href="img/sprites/sprite.svg#shopping_cart_plus_round"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="cat1-goods__all-btn btn bg_pink">Смотреть всё</button>
+            </li>
+            <li class="cat1-goods__item last-item">
+                <a href="#" class="cat1-goods__img-link">
+                    <div class="cat1-goods__img-container">
+                        <img src="img/example-spec3.jpg" alt="" class="cat1-goods__img">
+                        <ul class="cat1-goods__labels">
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#star_favorite"></use>
+                                </svg>
+                                <span class="lables-caption">Хит продаж</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#tag_fill"></use>
+                                </svg>
+                                <span class="lables-caption">Распродажа</span>
+                            </li>
+                            <li class="cat1-goods__labels-item label">
+                                <svg class="cat1-goods__labels-img">
+                                    <use xlink:href="img/sprites/sprite.svg#megaphone"></use>
+                                </svg>
+                                <span class="lables-caption">Популярное</span>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <div class="cat1-goods__bottom">
+                    <p class="cat1-goods__category clr_violent">Косметика для тела</p>
+                    <p class="cat1-goods__title">Бальзам «Невесты», 100 мл.</p>
+                    <div class="cat1-goods__row d-flex">
+                        <div class="cat1-goods__prices">
+                            <span class="cat1-goods__price">6 000 ₽</span>
+                            <span class="cat1-goods__old-price">8 000 ₽</span>
+                        </div>
+                        <div class="add-cart">
+                            <div class="cat1-goods__quantity card-quantity d-flex">
+                                <button class="cat1-goods__count-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                                    </svg></button>
+                                <input type="text" class="cat1-goods__count cart-count" disabled value="1">
+                                <button class="cat1-goods__count-btn cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                        <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                                    </svg></button>
+                            </div>
+                            <button class="cat1-goods__cart btn bg_blue d-flex add-to-cart">
+                                <svg class="cat1-goods__cart-img">
+                                    <use xlink:href="img/sprites/sprite.svg#shopping_cart_plus_round"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="cat1-goods__all-btn btn bg_pink">Смотреть всё</button>
+            </li>
+        </ul>
+
+    </div>
+</section>
+    <section class="brands">
+    <div class="container brands__container">
+        <ul class="brands__list d-flex">
+            <li class="brands__item d-flex"><img src="img/Logo-Saba.png" alt="" class="brands__img"></li>
+            <li class="brands__item d-flex"><img src="img/logo-green.png" alt="" class="brands__img"></li>
+            <li class="brands__item d-flex"><img src="img/Logo-jam-bar.png" alt="" class="brands__img"></li>
+            <li class="brands__item d-flex"><img src="img/Logo-read.jpg" alt="" class="brands__img"></li>
+        </ul>
+    </div>
+</section>
+    <section class="why">
+    <div class="container why__container">
+        <div class="why__content d-flex">
+            <div class="why__pic">
+                <img src="img/why-img.jpg" alt="" class="why__img">
+            </div>
+            <div class="why__text">
+                <h2 class="why__header h2">Почему FitnotecaStore?</h2>
+                <ul class="why__list">
+                    <li class="why__item d-flex">
+                        <svg class="why__item-img">
+                            <use xlink:href="img/sprites/sprite.svg#conjunctivitis"></use>
+                        </svg>
+                        <span class="why__item-text">Качественные<br>гипоаллергенные товары</span>
+                    </li>
+                    <li class="why__item d-flex">
+                        <svg class="why__item-img">
+                            <use xlink:href="img/sprites/sprite.svg#clock"></use>
+                        </svg>
+                        <span class="why__item-text">Быстрая доставка</span>
+                    </li>
+                    <li class="why__item d-flex">
+                        <svg class="why__item-img">
+                            <use xlink:href="img/sprites/sprite.svg#checklist"></use>
+                        </svg>
+                        <span class="why__item-text">Широкая линейка продукции</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="footer__top">
+        <div class="container">
+            <div class="footer__content d-flex">
+                <div class="footer__menu d-flex">
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-header">Косметика</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Для лица</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Для тела</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Для волос</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Длярук</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Для ног</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-header">Одежда</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Лосины</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Велосипедки</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Топы и футболки</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Комбинезоны</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Кофты и толстовки</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-header">Продукты Fitnoteca</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"> <a href="#" class="footer__menu-link">Групповые
+                                    абонементы</a></li>
+                            <li class="footer__menu-item"> <a href="#" class="footer__menu-link">Индивидуальные
+                                    тренировки</a></li>
+                            <li class="footer__menu-item"> <a href="#" class="footer__menu-link">Массаж</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Аксессуары</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-header">FitStore</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">О магазине</a></li>
+                            <li class="footer__menu-item"> <a href="#" class="footer__menu-link">Доставка</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Оплата</a></li>
+                            <li class="footer__menu-item"><a href="#"
+                                    class="footer__menu-link footer__menu-link_offer">Спецпредложения</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__text">
+                        <h3 class="footer__right-header d-flex">
+                            <svg class="footer__right-header-img">
+                                <use xlink:href="img/sprites/sprite.svg#email"></use>
+                            </svg>
+                            Будь в курсе новинок и скидок!
+                        </h3>
+                        <p class="footer__right-text">Только полезные рассылки<br>и никакого спама, мы обещаем</p>
+                    </div>
+                    <form action="" class="footer__right-form d-flex">
+                        <input type="text" class="footer__right-form-imput" placeholder="sample@sample.com">
+                        <button class="footer__right-form-btn" type="button">
+                            <svg class="footer__right-form-btn-img">
+                                <use xlink:href="img/sprites/sprite.svg#arrow_right"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__cards d-flex">
+                <img src="img/mastercard-color.png" alt="" class="footer__cards-img">
+                <img src="img/maestro-color.png" alt="" class="footer__cards-img">
+                <img src="img/visa-color.png" alt="" class="footer__cards-img">
+                <img src="img/mir-color.png" alt="" class="footer__cards-img">
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container footer__bottom-container d-flex">
+            <div class="footer__bottom-left d-flex">
+                <a href="/"><img src="img/fitnoteca_logo-white.svg" alt="" class="footer__logo"></a>
+                <span class="footer__split"></span>
+                <a href="#">
+                    <svg class="footer__inst">
+                        <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+                    </svg>
+                </a>
+            </div>
+            <a href="#" class="footer__policy">Политика конфиденциальности</a>
+            <a href="https://adwin.agency/" class="footer__adwin d-flex" target="_blank">Создано в
+                <svg class="footer__adwin-img" alt="ADWIN.Agency" class="footer__adwin-img">
+                    <use xlink:href="img/sprites/sprite.svg#Adwin-white"></use>
+                </svg></a>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/vendor.js"></script>
+<div class="cart">
+    <div class="cart__header">Заказ</div>
+    <ul class="cart__item-list">
+        <li class="cart__item">
+            <div class="cart__item-row">
+                <p class="cart__item-title">Бальзам «Невесты», 100 мл.</p>
+                <div class="add-cart">
+                    <div class="card-quantity d-flex show">
+                        <button class="card-val-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                            </svg></button>
+                        <input type="text" class="cart-count" disabled="" value="1">
+                        <button class="card-val-btn s cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <p class="cart__price">6 000 ₽</p>
+            </div>
+            <button class="cart__remove clr_blue">Удалить</button>
+        </li>
+        <li class="cart__item">
+            <div class="cart__item-row">
+                <p class="cart__item-title">Масло для тела ореха Карите Лотос/Франжипани 100 мл.</p>
+                <div class="add-cart">
+                    <div class="card-quantity d-flex show">
+                        <button class="card-val-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                            </svg></button>
+                        <input type="text" class="cart-count" disabled="" value="1">
+                        <button class="card-val-btn s cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <p class="cart__price">6 000 ₽</p>
+            </div>
+            <button class="cart__remove">Удалить</button>
+        </li>
+        <li class="cart__item">
+            <div class="cart__item-row">
+                <p class="cart__item-title">Масло для тела ореха Карите Лотос/Франжипани 100 мл.</p>
+                <div class="add-cart">
+                    <div class="card-quantity d-flex show">
+                        <button class="card-val-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                            </svg></button>
+                        <input type="text" class="cart-count" disabled="" value="1">
+                        <button class="card-val-btn s cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <p class="cart__price">6 000 ₽</p>
+            </div>
+            <button class="cart__remove">Удалить</button>
+        </li>
+        <li class="cart__item">
+            <div class="cart__item-row">
+                <p class="cart__item-title">Масло для тела ореха Карите Лотос/Франжипани 100 мл.</p>
+                <div class="add-cart">
+                    <div class="card-quantity d-flex show">
+                        <button class="card-val-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                            </svg></button>
+                        <input type="text" class="cart-count" disabled="" value="1">
+                        <button class="card-val-btn s cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <p class="cart__price">6 000 ₽</p>
+            </div>
+            <button class="cart__remove">Удалить</button>
+        </li>
+        <li class="cart__item">
+            <div class="cart__item-row">
+                <p class="cart__item-title">Масло для тела ореха Карите Лотос/Франжипани 100 мл.</p>
+                <div class="add-cart">
+                    <div class="card-quantity d-flex show">
+                        <button class="card-val-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                            </svg></button>
+                        <input type="text" class="cart-count" disabled="" value="1">
+                        <button class="card-val-btn s cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <p class="cart__price">6 000 ₽</p>
+            </div>
+            <button class="cart__remove">Удалить</button>
+        </li>
+    </ul>
+    <div class="cart__sum d-flex"><span class="cart__sum-text">Сумма </span><span class="cart__sum-val"> 19 000 ₽</span>
+    </div>
+    <div class="cart__buttons">
+        <button class="cart__resume btn bg_grey">Продолжить покупки</button>
+        <a href="#" class="cart__place btn bg_pink">Оформить заказ</a>
+    </div>
+
+</div>
+<div class="b-shadow"></div>
+</body>
+
+</html>
+

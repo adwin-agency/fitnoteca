@@ -1,0 +1,111 @@
+<section class="order">
+    <div class="container order__container">
+        <div class="order__wrapper">
+            <h1 class="order__header h1">Оформление заказа</h1>
+        </div>
+        <form class="order__form">
+            <div class="order__wrapper">
+                <div class="order__mob">
+                    <p class="order__right-hedaer">Заказ</p>
+                    <ul class="order__list">
+                        <li class="order__list-item">
+                            <p class="order__list-title">Бальзам «Невесты», 100 мл.</p>
+                            <p class="order__list-price">6 000 ₽</p>
+                            <p class="order__list-count">1 шт.</p>
+                        </li>
+                        <li class="order__list-item">
+                            <p class="order__list-title">Масло для тела ореха Карите Лотос/Франжипани 100 мл.</p>
+                            <p class="order__list-price">13 000 ₽</p>
+                            <p class="order__list-count">2 шт.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order__left">
+                    <p class="order__left-header">Контактная информация</p>
+                    <div class="order__contacts">
+                        <div class="order__form-element">
+                            <label for="" class="order__form-label form-label">Имя получателя</label>
+                            <input type="text" class="order__form__input form-input" placeholder="Ваши имя и фамилия">
+                        </div>
+                        <div class="order__form-row">
+                            <div class="order__form-element">
+                                <label for="" class="order__form-label form-label">Контактный телефон</label>
+                                <input type="tel" class="order__form__input form-input" placeholder="+7 (999) 999 - 99 - 99">
+                            </div>
+                            <div class="order__form-element">
+                                <label for="" class="order__form-label form-label">Mail</label>
+                                <input type="text" class="order__form__input form-input" placeholder="sample@sample.ru">
+                                <p class="order__form-input-caption">Сюда будет выслана квитанция об оплате</p>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="order__form-checkbox form-checkbox">
+                        <input type="checkbox" class="checkbox" id="notice" checked/>
+                        <label for="notice">Держите меня в курсе: я хочу получать уведомления о скидках и акциях</label>
+                    </div>
+                    <div class="order__delivery">
+                        <p class="order__left-header">Способ доставки</p>
+                        <div class="order__rb">
+                            <div class="form-radio">
+                                <input type="radio" name="radio" class="radio" id="delivery1" />
+                                <label for="delivery1">Самовывоз - бесплатно</label>
+                                <p class="order__radio-caption">Самовывоз осуществляется из фитнес-студии Fitnoteca по адресу Санкт-Петербург, ул. Кременчугская 19/3.<br>Ежедневно с 10:00-22:00.</p>
+                            
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" name="radio" class="radio" id="delivery2" />
+                                <label for="delivery2">Курьерская доставка </label>
+                                <p class="order__radio-caption">Заказы на сумму более 8 000 ₽ доставляются бесплатно<br>при меньшей сумме заказа стоимость доставки по Санкт-Петербургу - 1000 ₽</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order__right">
+                <div class="order__wrapper">
+                    <span class="order__hole"></span>
+                    <div class="order__desc">
+                        <p class="order__right-hedaer">Заказ</p>
+                        <ul class="order__list">
+                            <li class="order__list-item">
+                                <p class="order__list-title">Бальзам «Невесты», 100 мл.</p>
+                                <p class="order__list-price">6 000 ₽</p>
+                                <p class="order__list-count">1 шт.</p>
+                            </li>
+                            <li class="order__list-item">
+                                <p class="order__list-title">Масло для тела ореха Карите Лотос/Франжипани 100 мл.</p>
+                                <p class="order__list-price">13 000 ₽</p>
+                                <p class="order__list-count">2 шт.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order__promo">
+                            <input type="text" class="order__promo__input form-input" placeholder="Промокод">
+                            <button class="order__promo-btn btn bg_pink">Применить</button>
+                    </div>
+                    <div class="order__info">
+                        <div class="order__sum-before order__info-item">
+                            <p class="order__sum-before-text  order__info-left">Сумма</p>
+                            <p class="order__sum-before-val order__info-right">19 000 ₽</p>
+                        </div>
+                        <div class="order__info-discount order__info-item">
+                            <p class="order__info-discount-text order__info-left">Скидка</p>
+                            <p class="order__info-discount-val order__info-right">- ₽</p>
+                        </div>
+                        <div class="order__info-delivery order__info-item">
+                            <p class="order__info-delivery-text order__info-left">Доставка</p>
+                            <p class="order__info-delivery-val order__info-right">курьером<br> бесплатно</p>
+                        </div>
+                        <div class="order__sum-after order__info-item">
+                            <p class="order__sum-after-text order__info-left">Сумма</p>
+                            <p class="order__sum-after-val order__info-right">19 000 ₽</p>
+                        </div>
+                    </div>
+                    <button class="order__resume-btn btn bg_pink">Продолжить оформление</button>
+                    <div class="order__policy">Нажимая кнопку «Продолжить оформление», вы соглашаетесь с <a href="#">договором оферты</a> и <a href="#">условиями оплаты</a> и <a href="#">доставки</a>"</div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

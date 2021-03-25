@@ -1,0 +1,117 @@
+.delivery{
+    background-color: #f3f4f9;
+    padding-top: 67px;
+    padding-bottom:56px;
+    &__container{
+        max-width: 1420px;
+    }
+    &__header{
+        margin-bottom: 61px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__list-img{
+        fill: white;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding: 15px;
+        background-color: #aca8c3;
+        box-sizing: border-box;
+        margin-right: 27px;
+        flex-shrink: 0;
+    }
+    &__subheader{
+        margin-bottom: 33px;
+    }
+    &__info{
+        max-width: 640px;
+    }
+    &__info_first{
+
+    }
+    &__map-wrapper{
+        width: 100%;
+        margin-top: 29px;
+    }
+    &__list-item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        line-height: 32px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+@media(max-width:1600px){
+    .delivery{
+        padding-top: 59px;
+    }
+    .delivery__subheader {
+        margin-bottom: 31px;
+    }
+    .delivery__header {
+        margin-bottom: 52px;
+    }
+    .delivery__map-wrapper{
+        margin-top: 0;
+    }
+    .delivery__info {
+        max-width: 557px;
+    }
+}
+@media(max-width:1280px){
+    .delivery {
+        padding-top: 37px;
+        padding-bottom: 48px;
+    }
+    .delivery__header {
+        margin-bottom: 33px;
+    }
+    .delivery__subheader {
+        margin-bottom: 20px;
+    }
+    .delivery__info {
+        max-width: 455px;
+    }
+    .delivery__list-item br{
+        display: none;
+    }
+    .delivery__map iframe, .delivery__map{
+        height: 250px;
+        width: 460px;
+    }
+}
+@media(max-width:960px){
+    .delivery__content{
+        flex-direction: column;
+    }
+    .delivery__info_second{
+        order: 2;
+    }
+    .delivery__info{
+        max-width: 100%;
+    }
+    .delivery__map iframe, .delivery__map{
+        height: 250px;
+        width: 100%;
+    }
+    .delivery__map-wrapper{
+        margin: 0px 0 52px;
+    }
+    .delivery__info_first .delivery__list-item:last-child{
+        align-items: flex-start;
+    }
+    .delivery__info_second .delivery__list-item{
+        align-items: flex-start;
+    }
+    .delivery__list-item{
+        margin-bottom: 17px;
+    }
+    .delivery__list-img{
+        margin-right: 12px;
+    }
+}

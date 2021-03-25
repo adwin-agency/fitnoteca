@@ -1,0 +1,315 @@
+.filter{
+   
+    width: 100%;
+    
+    background-color: #f9fafc;
+    padding: 60px 60px 60px 60px;
+    max-width: 220px;
+    &__wrapper{
+        margin-right: 50px;
+        width: 100%;
+        max-width: 340px;
+        
+    }
+    &__category{
+        margin-bottom: 48px;
+    }
+    &__category-img{
+        max-width: 33px;
+        max-height: 34px;
+        object-fit: contain;
+        margin-right: 16px;
+        fill:#21303D;
+    }
+    &__category-header{
+        font-size: 11px;
+        font-weight: bold;
+        color:#949494;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+    &__category-link{
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: uppercase;
+        align-items: center;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &__category-item{
+        margin-bottom: 16px;
+    }
+    &__btn{
+        display: none;
+        max-width: 300px;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+         justify-content: center;
+         font-size: 14px;
+         padding: 13px 0;
+         border-radius: 25px;
+         margin-bottom: 26px;
+        &-img{
+            width: 20px;
+            height: 24px;
+            margin-right: 13px;
+        }
+    }
+}
+.sort{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+.sort .form-select{
+    width: 220px;
+}
+.form-filter{
+    &__header{
+        font-size: 11px;
+        font-weight: bold;
+        color:#949494;
+        text-transform: uppercase;
+        margin-bottom: 13px;
+    }
+    & .form-select{
+        margin-bottom: 21px;
+    }
+    & .form-range{
+        margin-top: 34px;
+        margin-bottom: 31px;
+    }
+
+}
+.filter__category-link_current{
+    color:#aca8c3;
+}
+.filter__category-link_current svg{
+    fill:#aca8c3;
+}
+.cat1__checkboxes{
+    margin-top: 67px;
+}
+.filter__checkboxes .form-checkbox{
+    margin-bottom: 24px;
+}
+.filter__checkboxes .form-checkbox:last-child{
+    margin-bottom: 0;
+}
+.cat2__filter .filter__category-header{
+    margin-bottom: 41px;
+}
+.cat2__filter .filter__category-item {
+    margin-bottom: 26px;
+}
+.cat2__filter .filter__category{
+    margin-bottom: 64px;
+}
+.cat2__filter .cloth-checkbox__container{
+    padding-top: 10px;
+    margin-bottom: 19px;
+}
+.cat2__filter .color-checkbox__container{
+    margin-bottom: 46px;
+}
+.cat3__filter .filter__wrapper{
+
+    margin-right: 60px;
+}
+.filter.subcat3-1-filter{
+    & .filter__category-header{
+        margin-bottom: 40px;
+    }
+    & .filter__category-item {
+        margin-bottom: 26px;
+    }
+    & .form-filter{
+        padding-top: 28px;
+    }
+    & .form-range {
+        margin-top: 22px;
+        margin-bottom: 68px;
+    }
+}
+.filter__wrapper .popup__close, .filter__current, .filter__result{
+    display: none;
+}
+@media(max-width:1600px){
+    .filter{
+        
+        padding: 45px 40px 45px 40px;
+        max-width: 220px;
+        
+
+        &__wrapper{
+            margin-left: -10px;
+            margin-right: 25px;
+            max-width: 300px;
+        }
+    }
+    .filter__category-img{
+        max-height: 26px;
+    }
+}
+@media(max-width:1280px){
+    .form-filter .form-range {
+        margin-top: 21px;
+        margin-bottom: 25px;
+    }
+    .cat1__checkboxes {
+        margin-top: 57px;
+    }
+   
+}
+@media(max-width:960px){
+    .filter{
+        
+        &__wrapper{
+            margin-right: auto;
+        }
+    }
+
+}
+@media(max-width:768px){
+    .filter{
+        display: none;
+    }
+    .filter__btn{
+        display: flex;
+    }
+    .sort{
+        display: none;
+    }
+    .filter__mob-top{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .filter__wrapper{
+        max-width: 100%;
+        margin-left: 0px;
+    }
+    .filter__wrapper.active{
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        background-color: #f9fafc;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+
+        & .filter__mob-top{
+            width: 300px;
+            margin: 0 auto;
+            padding: 21px 40px 13px;
+            border-bottom: 1px solid #d6d6d6;
+            display: flex;
+            box-sizing: border-box;
+        }
+        & .filter__current{
+            width: 300px;
+            margin: 0 auto;
+            padding: 17px 40px 10px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #d6d6d6;
+            display: block;
+
+        }
+        & .popup__close{
+            position: relative;
+            right: auto;
+            top: auto;
+            height: 15px;
+            padding-top: 15px;
+            margin-left: auto;
+            margin-right: -35px;
+        }
+        & .filter__btn{
+            padding: 0;
+            background: none;
+            width: auto;
+            max-width: none;
+            margin: 0;
+            font-size: 18px;
+            text-transform: none;
+            & svg{
+                display: none;
+            }
+        }
+        & .filter__current-list{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        & .filter__current-item{
+            font-size: 12px;
+            background-color: #f0f0f0;
+            border-radius: 30px;
+            padding: 3px 13px;
+            margin-bottom: 2px;
+            display: flex;
+            align-items: center;
+            &:after{
+                content:"×";
+                display: inline;
+                margin-left: 20px;
+                cursor:pointer;
+                font-size: 21px;
+
+            }
+        }
+        & .filter__reset-btn{
+            font-size: 12px;
+            font-weight: bold;
+            color:#949494;
+            text-decoration: underline;
+            background-color: inherit;
+            margin-top: 9px;
+        }
+        & .filter{
+            padding-top: 22px;
+            overflow: scroll;
+            box-sizing: border-box;
+            width: 300px;
+            max-width: 300px;
+            padding-bottom: 130px;
+            display: block;
+            margin: 0 auto;
+        }
+        & .filter__result{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            bottom: 0px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            z-index: 120;
+            
+        }
+        & .filter__result-btn{
+            width: 300px;
+            padding: 29px 0;
+        }
+        & .filter__category-link_current{
+            background-color: #f0f0f0;
+            color: #243340;
+        }
+        & .filter__category-link_current svg{
+            fill: #243340;
+        }
+        & .filter__category-item{
+            margin-bottom: 0;
+        }
+        & .filter__category-link{
+            padding: 8px;
+            border-radius: 30px;
+        }   
+    }
+
+}

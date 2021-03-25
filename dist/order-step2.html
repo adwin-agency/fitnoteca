@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>fitstore</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="header__row d-flex">
+                <div class="header__burger">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </div>
+                <div class="header__logo">
+                    <a href="/"><img src="img/fitnoteca_logo.svg" alt=""></a>
+                </div>
+                <nav class="header__nav">
+                    <div class="nav-container">
+                        <ul class="header__menu d-flex">
+                            <li class="header__menu-item header__menu-item_with-child">
+                                <a class="header__link">Каталог</a>
+                                <section class="dropdown">
+                                    <div class="dropdown__container">
+                                        <div class="dropdown__menu-container d-flex">
+                                            <div class="dropdown__wrapper">
+                                                <a href="cat-category1.html" class="dropdown__header">Косметика</a>
+                                                <ul class="dropdown__menu">
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для лица</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для тела</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для рук</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для ног</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory1.html"
+                                                            class="dropdown__menu-link">Для волос</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown__wrapper">
+                                                <a href="cat-category2.html" class="dropdown__header">Одежда</a>
+                                                <ul class="dropdown__menu">
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Лосины</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Велосипедки</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Топы и футболки</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Комбинезоны</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory2.html"
+                                                            class="dropdown__menu-link">Кофты и толстовки</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown__wrapper">
+                                                <a href="cat-category3.html" class="dropdown__header">Продукты
+                                                    Fitnoteca</a>
+                                                <ul class="dropdown__menu">
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory3-1.html"
+                                                            class="dropdown__menu-link">Групповые абонементы</a></li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory3-2.html"
+                                                            class="dropdown__menu-link">Индивидуальные тренировки</a>
+                                                    </li>
+                                                    <li class="dropdown__menu-item"><a href="cat-subcategory3-3.html"
+                                                            class="dropdown__menu-link">Массаж</a></li>
+                                                    <li class="dropdown__menu-item"><a href="#"
+                                                            class="dropdown__menu-link">Аксессуары</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__banner">
+                                            <a href="/specials.html" class="dropdown__banner-link">Спецпредложения
+                                                <svg class="dropdown__banner-link-img">
+                                                    <use xlink:href="img/sprites/sprite.svg#arrow_right-menu"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="header__menu-item"><a class="header__link" href="payment.html">Оплата</a></li>
+                            <li class="header__menu-item"><a class="header__link" href="delivery.html">Доставка</a></li>
+                            <li class="header__menu-item"><a class="header__link" href="about.html">О магазине</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header__icons d-flex">
+                    <a href="#">
+                        <svg class="header__icons-img inst">
+                            <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <span class="header__icons-split"></span>
+                    <!--
+                <svg class="header__icons-img">
+                    <use xlink:href="img/sprites/sprite.svg#search_left"></use>
+                </svg>-->
+                    <div class="cart-icon__wrap active">
+                        <svg class="header__icons-img" id="cart-icon">
+                            <use xlink:href="img/sprites/sprite.svg#cart"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<main class="main">
+    <section class="order order_step2">
+    <div class="container order__container">
+        <div class="order__wrapper">
+            <h1 class="order__header h1">Оформление заказа</h1>
+        </div>
+        <form class="order__form">
+            <div class="order__wrapper">
+                <div class="order__left">
+                    <div class="order__delivery">
+                        <p class="order__left-header">Способ оплаты</p>
+                        <div class="order__rb">
+                            <div class="form-radio">
+                                <input type="radio" name="radio" class="radio" id="delivery1" />
+                                <label for="delivery1">Наличными при получении</label>
+                                <p class="order__radio-caption">Единовременная оплата всей суммы наличными или подарочным <br>сертификатом курьеру при получении заказа</p>
+                            
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" name="radio" class="radio" id="delivery2" />
+                                <label for="delivery2">Оплата онлайн</label>
+                                <p class="order__radio-caption">Для оплаты через сайт заполните следующую форму и после вы автоматически перейдёте на сайт банка с протоколом безопасности для оплаты.</p>
+                                <div class="order__cards d-flex">
+                                    <img src="img/mastercard-color.png" alt="" class="order__cards-img">
+                                    <img src="img/maestro-color.png" alt="" class="order__cards-img">
+                                    <img src="img/visa-color.png" alt="" class="order__cards-img">
+                                    <img src="img/mir-color.png" alt="" class="order__cards-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__contacts">
+                        <div class="order__form-element">
+                            <label for="" class="order__form-label form-label">Имя получателя</label>
+                            <input type="text" class="order__form__input form-input" placeholder="Ваши имя и фамилия">
+                        </div>
+                        <div class="order__form-row">
+                            <div class="order__form-element">
+                                <label for="" class="order__form-label form-label">Контактный телефон</label>
+                                <input type="tel" class="order__form__input form-input" placeholder="+7 (999) 999 - 99 - 99">
+                            </div>
+                            <div class="order__form-element">
+                                <label for="" class="order__form-label form-label">Mail</label>
+                                <input type="text" class="order__form__input form-input" placeholder="sample@sample.ru">
+                                <p class="order__form-input-caption">Сюда будет выслана квитанция об оплате</p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="order__right">
+                <div class="order__wrapper">
+                    <span class="order__hole"></span>                   
+                    <div class="order__desc">
+                        <p class="order__right-hedaer">Заказ</p>
+                        <ul class="order__list">
+                            <li class="order__list-item">
+                                <p class="order__list-title">Бальзам «Невесты», 100 мл.</p>
+                                <p class="order__list-price">6 000 ₽</p>
+                                <p class="order__list-count">1 шт.</p>
+                            </li>
+                            <li class="order__list-item">
+                                <p class="order__list-title">Масло для тела ореха Карите Лотос/Франжипани 100 мл.</p>
+                                <p class="order__list-price">13 000 ₽</p>
+                                <p class="order__list-count">2 шт.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order__info">
+                        <div class="order__sum-before order__info-item">
+                            <p class="order__sum-before-text  order__info-left">Сумма</p>
+                            <p class="order__sum-before-val order__info-right">19 000 ₽</p>
+                        </div>
+                        <div class="order__info-discount order__info-item">
+                            <p class="order__info-discount-text order__info-left">Скидка</p>
+                            <p class="order__info-discount-val order__info-right">1000 ₽</p>
+                        </div>
+                        <div class="order__info-delivery order__info-item">
+                            <p class="order__info-delivery-text order__info-left">Доставка</p>
+                            <p class="order__info-delivery-val order__info-right">курьером<br>бесплатно</p>
+                        </div>
+                        <div class="order__sum-after order__info-item">
+                            <p class="order__sum-after-text order__info-left">Сумма</p>
+                            <p class="order__sum-after-val order__info-right">18 000 ₽</p>
+                        </div>
+                    </div>
+                    <button class="order__resume-btn btn bg_pink">Продолжить оформление</button>
+                    <div class="order__policy">Нажимая кнопку «Продолжить оформление», вы соглашаетесь с <a href="#">договором оферты</a> и <a href="#">условиями оплаты</a> и <a href="#">доставки</a>"</div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="footer__top">
+        <div class="container">
+            <div class="footer__content d-flex">
+                <div class="footer__menu d-flex">
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-header">Косметика</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Для лица</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Для тела</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Для волос</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Длярук</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Для ног</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-header">Одежда</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Лосины</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Велосипедки</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Топы и футболки</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Комбинезоны</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Кофты и толстовки</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-header">Продукты Fitnoteca</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"> <a href="#" class="footer__menu-link">Групповые
+                                    абонементы</a></li>
+                            <li class="footer__menu-item"> <a href="#" class="footer__menu-link">Индивидуальные
+                                    тренировки</a></li>
+                            <li class="footer__menu-item"> <a href="#" class="footer__menu-link">Массаж</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Аксессуары</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-header">FitStore</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">О магазине</a></li>
+                            <li class="footer__menu-item"> <a href="#" class="footer__menu-link">Доставка</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Оплата</a></li>
+                            <li class="footer__menu-item"><a href="#"
+                                    class="footer__menu-link footer__menu-link_offer">Спецпредложения</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__text">
+                        <h3 class="footer__right-header d-flex">
+                            <svg class="footer__right-header-img">
+                                <use xlink:href="img/sprites/sprite.svg#email"></use>
+                            </svg>
+                            Будь в курсе новинок и скидок!
+                        </h3>
+                        <p class="footer__right-text">Только полезные рассылки<br>и никакого спама, мы обещаем</p>
+                    </div>
+                    <form action="" class="footer__right-form d-flex">
+                        <input type="text" class="footer__right-form-imput" placeholder="sample@sample.com">
+                        <button class="footer__right-form-btn" type="button">
+                            <svg class="footer__right-form-btn-img">
+                                <use xlink:href="img/sprites/sprite.svg#arrow_right"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__cards d-flex">
+                <img src="img/mastercard-color.png" alt="" class="footer__cards-img">
+                <img src="img/maestro-color.png" alt="" class="footer__cards-img">
+                <img src="img/visa-color.png" alt="" class="footer__cards-img">
+                <img src="img/mir-color.png" alt="" class="footer__cards-img">
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container footer__bottom-container d-flex">
+            <div class="footer__bottom-left d-flex">
+                <a href="/"><img src="img/fitnoteca_logo-white.svg" alt="" class="footer__logo"></a>
+                <span class="footer__split"></span>
+                <a href="#">
+                    <svg class="footer__inst">
+                        <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+                    </svg>
+                </a>
+            </div>
+            <a href="#" class="footer__policy">Политика конфиденциальности</a>
+            <a href="https://adwin.agency/" class="footer__adwin d-flex" target="_blank">Создано в
+                <svg class="footer__adwin-img" alt="ADWIN.Agency" class="footer__adwin-img">
+                    <use xlink:href="img/sprites/sprite.svg#Adwin-white"></use>
+                </svg></a>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/vendor.js"></script>
+<div class="cart">
+    <div class="cart__header">Заказ</div>
+    <ul class="cart__item-list">
+        <li class="cart__item">
+            <div class="cart__item-row">
+                <p class="cart__item-title">Бальзам «Невесты», 100 мл.</p>
+                <div class="add-cart">
+                    <div class="card-quantity d-flex show">
+                        <button class="card-val-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                            </svg></button>
+                        <input type="text" class="cart-count" disabled="" value="1">
+                        <button class="card-val-btn s cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <p class="cart__price">6 000 ₽</p>
+            </div>
+            <button class="cart__remove clr_blue">Удалить</button>
+        </li>
+        <li class="cart__item">
+            <div class="cart__item-row">
+                <p class="cart__item-title">Масло для тела ореха Карите Лотос/Франжипани 100 мл.</p>
+                <div class="add-cart">
+                    <div class="card-quantity d-flex show">
+                        <button class="card-val-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                            </svg></button>
+                        <input type="text" class="cart-count" disabled="" value="1">
+                        <button class="card-val-btn s cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <p class="cart__price">6 000 ₽</p>
+            </div>
+            <button class="cart__remove">Удалить</button>
+        </li>
+        <li class="cart__item">
+            <div class="cart__item-row">
+                <p class="cart__item-title">Масло для тела ореха Карите Лотос/Франжипани 100 мл.</p>
+                <div class="add-cart">
+                    <div class="card-quantity d-flex show">
+                        <button class="card-val-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                            </svg></button>
+                        <input type="text" class="cart-count" disabled="" value="1">
+                        <button class="card-val-btn s cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <p class="cart__price">6 000 ₽</p>
+            </div>
+            <button class="cart__remove">Удалить</button>
+        </li>
+        <li class="cart__item">
+            <div class="cart__item-row">
+                <p class="cart__item-title">Масло для тела ореха Карите Лотос/Франжипани 100 мл.</p>
+                <div class="add-cart">
+                    <div class="card-quantity d-flex show">
+                        <button class="card-val-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                            </svg></button>
+                        <input type="text" class="cart-count" disabled="" value="1">
+                        <button class="card-val-btn s cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <p class="cart__price">6 000 ₽</p>
+            </div>
+            <button class="cart__remove">Удалить</button>
+        </li>
+        <li class="cart__item">
+            <div class="cart__item-row">
+                <p class="cart__item-title">Масло для тела ореха Карите Лотос/Франжипани 100 мл.</p>
+                <div class="add-cart">
+                    <div class="card-quantity d-flex show">
+                        <button class="card-val-btn cart-less btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#minus"></use>
+                            </svg></button>
+                        <input type="text" class="cart-count" disabled="" value="1">
+                        <button class="card-val-btn s cart-more btn bg_blue"><svg class="cart-ml-icon">
+                                <use xlink:href="img/sprites/sprite.svg#plus"></use>
+                            </svg></button>
+                    </div>
+                </div>
+                <p class="cart__price">6 000 ₽</p>
+            </div>
+            <button class="cart__remove">Удалить</button>
+        </li>
+    </ul>
+    <div class="cart__sum d-flex"><span class="cart__sum-text">Сумма </span><span class="cart__sum-val"> 19 000 ₽</span>
+    </div>
+    <div class="cart__buttons">
+        <button class="cart__resume btn bg_grey">Продолжить покупки</button>
+        <a href="#" class="cart__place btn bg_pink">Оформить заказ</a>
+    </div>
+
+</div>
+<div class="b-shadow"></div>
+</body>
+
+</html>

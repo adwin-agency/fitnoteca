@@ -1,0 +1,492 @@
+.about-banner{
+    position: relative;
+    overflow: hidden;
+    transition: .5s ease-out;
+    height: 800px;
+    
+    &.hidden{
+        height: 100px;
+
+        & .about-banner__h1{
+            opacity: 0;
+        }
+    }
+    &__video{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    &__container{
+       
+    }
+    &__wrapper{
+        position: absolute;
+        width: 100%;
+        bottom: 90px;
+        left: 0px;
+    }
+    &__h1{
+        color:white;
+        max-width: 1420px;
+        margin: 0 auto;
+        opacity: 1;
+        transition: .3s;
+    }
+}
+.about-content{
+    padding-top: 75px;
+    padding-bottom: 173px;
+    background-image: url(../img/fitnoteca_bg.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    &__container{
+        width: 1460px;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+    &__info{
+        margin-left: 20px;
+        max-width: 654px;
+    }
+    &__h1{
+        margin-bottom: 60px;
+        margin-top: 85px;
+    }
+    &__text{
+        
+
+        & p{
+            margin-bottom: 20px;
+        }
+    }
+    &__pic{
+        justify-content: space-between;
+        width: 640px;
+    }
+    &__pic-left{
+        max-width: 321px;
+    }
+    &__pic-right{
+        max-width: 321px;
+        margin-top: 157px;
+    }
+    &__img{
+        margin-bottom: 17px;
+        object-fit: cover;
+        width: 100%; 
+    }
+    &__ps{
+        margin-left: auto;
+        width: 178px;
+        padding-top: 20px;
+        margin-right: -5px;
+        &-text{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 19px;
+
+        }
+        &-img{
+            width: 134px;
+        }
+    }
+}
+.about-questions{
+    background-color: #f3f4f9;
+    margin-top: 143px;
+    padding-top: 91px;
+    padding-bottom: 242px;
+    &__container{
+        width: 1420px;
+        justify-content: space-between;
+    }
+    &__content{
+        max-width: 1040px;
+        width:100%;
+        padding-top: 13px;
+        display: block;
+        column-width: 210px;
+        column-gap: 157px;
+    }
+    &__h2{
+        
+    }
+    &__col{
+        width: 242px;
+
+        &:nth-child(2){
+            width: 305px;
+        }
+    }
+    &__wrapper{
+        margin-bottom: 20px;
+        position: relative;
+    }
+    &__header{
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: underline;
+        line-height: 20px;
+        cursor: pointer;
+        
+
+    }
+    &__popup-header{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: 300;
+    }
+    &__popup{
+        position: fixed;
+        background-color: #21303d40;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        opacity: 0;
+        top: 0;
+        left: -4000px;
+        transition: opacity .4s;
+        &-wrapper{
+            position: absolute;
+            background-color: white;
+            padding: 73px 66px 106px 77px;
+            z-index: 10;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            max-width: 762px;
+            box-sizing: border-box;
+            box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+        }
+    }
+    &__wrapper.active &__popup{
+        opacity: 1;
+        left: 0;
+ 
+    }
+
+}
+.about-feedback{
+    max-width: 1140px;
+    width: 100%;
+    margin: -141px auto 29px;
+    background-color: #2d3b48;
+    &__caption{
+        color:white;
+        max-width: 303px;
+        width: 100%;
+    }
+    &__header{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 21px;
+    }
+    &__text{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    &__form{
+        padding: 79px 99px 58px;
+        
+        flex-wrap: wrap;
+    }
+    &__fields{
+        max-width: 540px;
+        width: 100%;
+        margin-left: auto;
+        margin-bottom: 23px;
+    }
+    &__submit{
+        width: 100%;
+    }
+    &__form-element{
+        display: flex;
+        flex-direction: column;
+    }
+    &__label{
+        color:white;
+        font-size: 14px;
+        margin-bottom: 1px;
+    }
+    &__form-row{
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 36px;
+    }
+    &__input{
+        width: 240px;
+    }
+    &__textarea{
+        height: 116px;
+    }
+    &__submit{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__policy{
+        font-size: 12px;
+        color: #aca8c3;
+        margin-top: 14px;
+        & a{
+            font-size: 12px;
+            color: #aca8c3;
+            text-decoration: underline;
+        }
+    }
+    &__btn{
+        padding: 24px 74px;
+    }
+
+}
+
+
+@media(max-width:1600px){
+    .about-content__info{
+        margin-left: 0px;
+        margin-bottom: 111px;
+    }
+    .about-content {
+        padding-top: 94px;
+        padding-bottom: 0px;
+        background-position: 100% 97%;
+        background-size: 548px;
+    }
+    .about-content__h1 {
+        margin-bottom: 50px;
+        margin-top: 17px;
+    }
+    .about-content__pic{
+        width: 540px;
+    }
+    .about-content__pic-left{
+        width: 263px;
+    }
+    .about-content__pic-right{
+        width: 248px;
+        margin-top: 130px;
+    } 
+    .about-content__img{
+        margin-bottom: 23px;
+    }
+    .about-content__info{
+        max-width: 620px;
+    }
+    .about-content__ps{
+        padding-top: 6px;
+    }
+    .about-questions {
+        margin-top: 127px;
+        padding-top: 102px;
+        padding-bottom: 212px;
+    }
+    .about-questions__content{
+        max-width: 935px;
+        column-gap: 117px;
+        column-width: 233px;
+    }
+    .about-feedback{
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width:1280px){
+    .about-banner{
+        height: 600px;
+    }
+    .about-banner__wrapper {
+        bottom:56px;
+    }
+    .about-content{
+        padding-top: 68px;
+        background-position: 100% 67%;
+    }
+    .about-content__pic-right{
+        display: none;
+    }
+    .about-content__pic{
+        width: 262px;
+    }
+    .about-content__h1{
+        margin-bottom: 44px;
+    }
+    .about-content__ps{
+        margin-right: 37px;
+        padding-top: 14px;
+    }
+    .about-questions{
+        margin-top: 93px;
+        padding-top: 61px;
+        padding-bottom: 194px;
+    }
+    .about-questions__content{
+        max-width: 620px;
+    }
+    .about-questions__h2{
+        font-size: 30px;
+    }
+    .about-questions__content{
+        column-gap: 69px;
+        column-width: 162px;
+    }
+    .about-feedback{
+        margin-top: -152px;
+        width: 960px;
+        max-width: 100%;
+        margin-bottom: 63px;
+    }
+    .about-feedback__form{
+        padding: 59px 46px 48px 61px;
+    }
+    .about-feedback__fields{
+        max-width: 520px;
+    }
+    .about-questions__container{
+        width: auto;
+    }
+}
+@media(max-width:960px){
+    .about-banner{
+        height: 550px;
+    }
+    .about-content__text p{
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .about-content__info{
+        margin-right: 30px;
+    }
+    .about-questions__container{
+        flex-direction: column;
+    }
+    .about-questions__content{
+        margin: 20px auto 0;
+    }
+    .about-questions__h2{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 620px;
+
+    }
+    .about-feedback__caption{
+        width: 520px;
+        max-width: 100%;
+        margin: 0 auto 31px;
+    }
+    .about-feedback__fields{
+        margin-right: auto;
+    }
+    .about-feedback__submit{
+        width: 520px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:768px){
+    .about-content__pic{
+        display: none;
+    }
+    .about-content__info{
+        max-width: 100%;
+        margin-right: 0px;
+    }
+    .about-banner__wrapper {
+        bottom: 34px;
+    }
+    .about-content__h1{
+        display: none;
+    }
+    .about-content {
+        padding-top: 43px;
+    }
+    .about-content__ps {
+        padding-top: 0px;
+        margin-right: 0px;
+        width: 139px;
+    }
+    .about-content__ps-text {
+        font-size: 14px;
+        margin-bottom: 11px;
+    }
+    .about-content__ps-img {
+        width: 110px;
+    }
+    .content__info {
+        margin-bottom: 106px;
+    }
+    .about-questions {
+        margin-top: 73px;
+        padding-top: 60px;
+        padding-bottom: 27px;
+    }
+    .about-questions__h2{
+        font-size: 24px;
+    }
+    .about-questions__content {
+        margin: 10px auto 0;
+    }
+    .about-feedback{
+        margin-top: 0px;
+    }
+    .about-feedback__form {
+        padding: 47px 10px 50px 10px;
+    }
+    .about-feedback__form-row{
+        margin-bottom: 22px;
+    }
+    .about-questions__popup-wrapper{
+        height: 100%;
+        padding: 73px 20px 31px 20px;
+        max-width: 100%;
+    }
+    .about-questions__text {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+@media(max-width:580px){
+    .about-questions__content {
+        column-gap: 0;
+        column-width: auto;
+    }
+    .about-feedback__form-row{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .about-feedback__input{
+        width: 100%;
+    }
+    .about-feedback__form-element{
+        margin-bottom: 25px;
+    }
+    .about-feedback__submit{
+        flex-direction: column;
+    }
+    .about-feedback__policy{
+        order: 2;
+    }
+    .about-feedback__btn{
+        width: 100%;
+    }
+    .about-feedback__fields{
+        margin-bottom: 0;
+    }
+    .about-feedback{
+        margin-bottom: 0px;
+    }
+    .about-main .brands {
+        padding-top: 50px;
+    }
+    .about-main .bottom-offers{
+        padding-top: 32px;
+    }
+
+}
