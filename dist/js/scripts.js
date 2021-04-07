@@ -139,7 +139,11 @@ function selectShow() {
 
             });
 
+            selectedText.innerHTML = select.value;
+            console.log(select);
             values.forEach((item, i) => {
+
+
                 item.addEventListener('click', function () {
                     var text = this.innerHTML;
                     selectedText.innerHTML = text;

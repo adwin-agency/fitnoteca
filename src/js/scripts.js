@@ -140,6 +140,7 @@ function selectShow() {
             });
 
             values.forEach((item, i) => {
+
                 item.addEventListener('click', function () {
                     var text = this.innerHTML;
                     selectedText.innerHTML = text;
@@ -153,7 +154,11 @@ function selectShow() {
             select.addEventListener('reset', () => {
                 selectedText.innerHTML = select.value;
             });
+
+
+
         });
+
     }
 }
 

@@ -1,9 +1,9 @@
 <div class="filter__wrapper">
     <div class="filter__mob-top">
-    <button class="filter__btn btn bg_pink">
-        <svg class="filter__btn-img">
-            <use xlink:href="img/sprites/sprite.svg#option_bar_settings"></use>
-        </svg>Фильтры</button>
+        <button class="filter__btn btn bg_pink">
+            <svg class="filter__btn-img">
+                <use xlink:href="img/sprites/sprite.svg#option_bar_settings"></use>
+            </svg>Фильтры</button>
         <div class="popup__close">
             <span class="close-line close-line1"></span>
             <span class="close-line close-line2"></span>
@@ -13,7 +13,7 @@
         <ul class="filter__current-list">
         </ul>
         <button class="filter__reset-btn">Сбросить фильтры</button>
-    </div>    
+    </div>
     <div class="filter">
         <div class="filter__category">
             <p class="filter__category-header">Категория</p>
@@ -65,12 +65,12 @@
             <div class="form-select">
                 <span class="form-select__selected">Все Бренды</span>
                 <select name="select" class="hidden-select">
-                    <option value="Все Бренды" name="Бренд:" >Все Бренды</option>
-                    <option value="Бренд 2" name="Бренд:" >Бренд 2</option>
-                    <option value="Бренд 3" name="Бренд:" >Бренд 3</option>
-                    <option value="Бренд 4" name="Бренд:" >Бренд 4</option>
+                    <option value="Все Бренды" name="Бренд:">Все Бренды</option>
+                    <option value="Бренд 2" name="Бренд:" selected>Бренд 2</option>
+                    <option value="Бренд 3" name="Бренд:">Бренд 3</option>
+                    <option value="Бренд 4" name="Бренд:">Бренд 4</option>
                 </select>
-                <ul class="form-select-list" >
+                <ul class="form-select-list">
                     <li class="form-select__option">Все Бренды</li>
                     <li class="form-select__option">Бренд 2</li>
                     <li class="form-select__option">Бренд 3</li>
@@ -79,20 +79,20 @@
             </div>
             <div class="form-range">
                 <div class="range-inputs">
-                        <input type="text"  class="range-input" name="Цена: от" id="range-input-min" value="10">
-                        <input type="text" class="range-input" name="до" id="range-input-max" value="10000">
+                    <input type="text" class="range-input" name="Цена: от" id="range-input-min" value="10">
+                    <input type="text" class="range-input" name="до" id="range-input-max" value="10000">
                 </div>
                 <div class="range" id="range"></div>
             </div>
             <div class="form-select">
                 <span class="form-select__selected">Любая форма выпуска</span>
                 <select name="select" class="hidden-select">
-                    <option value="Любая форма выпуска" name="Форма выпуска:" >Любая форма выпуска</option>
-                    <option value="опция 2" name="Форма выпуска:" >опция 2</option>
-                    <option value="опция 3" name="Форма выпуска:" >опция 3</option>
-                    <option value="опция 4" name="Форма выпуска:" >опция 4</option>
+                    <option value="Любая форма выпуска" name="Форма выпуска:">Любая форма выпуска</option>
+                    <option value="опция 2" name="Форма выпуска:">опция 2</option>
+                    <option value="опция 3" name="Форма выпуска:">опция 3</option>
+                    <option value="опция 4" name="Форма выпуска:">опция 4</option>
                 </select>
-                <ul class="form-select-list" >
+                <ul class="form-select-list">
                     <li class="form-select__option">Любая форма выпуска</li>
                     <li class="form-select__option">опция 2</li>
                     <li class="form-select__option">опция 3</li>
@@ -102,12 +102,12 @@
             <div class="form-select">
                 <span class="form-select__selected">Любой объём</span>
                 <select name="select" class="hidden-select">
-                    <option value="Любой объём" name="Объём:" >Любой объём</option>
-                    <option value="опция 2" name="Объём:" >опция 2</option>
-                    <option value="опция 3" name="Объём:" >опция 3</option>
-                    <option value="опция 4" name="Объём:" >опция 4</option>
+                    <option value="Любой объём" name="Объём:">Любой объём</option>
+                    <option value="опция 2" name="Объём:">опция 2</option>
+                    <option value="опция 3" name="Объём:">опция 3</option>
+                    <option value="опция 4" name="Объём:">опция 4</option>
                 </select>
-                <ul class="form-select-list" >
+                <ul class="form-select-list">
                     <li class="form-select__option">Любой объём</li>
                     <li class="form-select__option">опция 2</li>
                     <li class="form-select__option">опция 3</li>
@@ -116,15 +116,15 @@
             </div>
             <div class="filter__checkboxes cat1__checkboxes">
                 <div class="form-checkbox">
-                    <input type="checkbox" class="checkbox" id="checkbox" name="Наличие:" value="в наличии"/>
+                    <input type="checkbox" class="checkbox" id="checkbox" name="Наличие:" value="в наличии" />
                     <label for="checkbox">Только в наличии</label>
                 </div>
                 <div class="form-checkbox">
-                    <input type="checkbox" class="checkbox" id="checkbox2" value="Товары со скидкой" name=""/>
+                    <input type="checkbox" class="checkbox" id="checkbox2" value="Товары со скидкой" name="" />
                     <label for="checkbox2">Товары со скидкой</label>
                 </div>
                 <div class="form-checkbox">
-                    <input type="checkbox" class="checkbox" id="checkbox3" value="Новинки"name="" />
+                    <input type="checkbox" class="checkbox" id="checkbox3" value="Новинки" name="" />
                     <label for="checkbox3">Новинки</label>
                 </div>
             </div>
