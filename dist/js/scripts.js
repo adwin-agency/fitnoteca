@@ -209,17 +209,21 @@ function cartBtnClick() {
                     cardQuantity = item.querySelector('.card-quantity');
 
                 if (cartBtn) {
-                    if (e.target.closest('.add-to-cart') == cartBtn && !item.classList.contains('card__add-cart')) {
+                    if ((e.target.closest('.add-to-cart') == cartBtn && !item.classList.contains('card__add-cart')) || (document.documentElement.clientWidth < 769 && e.target.closest('.add-to-cart') == cartBtn)) {
                         cartBtn.classList.add('hide');
                         cardQuantity.classList.add('show');
+
+                        var val = parseInt(cartCount.value, 10);
+                        val++;
+                        cartCount.value = val;
                     }
-                    if (e.target.closest('.add-to-cart') == cartBtn && document.documentElement.clientWidth < 769) {
-                        cartBtn.classList.add('hide');
-                        cardQuantity.classList.add('show');
-                    }
+                    // if (e.target.closest('.add-to-cart') == cartBtn && document.documentElement.clientWidth < 769) {
+                    //     cartBtn.classList.add('hide');
+                    //     cardQuantity.classList.add('show');
+                    // }
 
                     if (e.target.closest('.cart-less') == cartMinus) {
-                        if (parseInt(cartCount.value, 10) > 0) {
+                        if (parseInt(cartCount.value, 10) > 1) {
                             var val = parseInt(cartCount.value, 10);
                             val--;
                             cartCount.value = val;
@@ -229,6 +233,10 @@ function cartBtnClick() {
                                 if (cartBtn) {
                                     cartBtn.classList.remove('hide');
                                     cardQuantity.classList.remove('show');
+                                    var val = parseInt(cartCount.value, 10);
+                                    val--;
+                                    cartCount.value = val;
+
                                 }
                             }
                         }
