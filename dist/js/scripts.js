@@ -195,50 +195,57 @@ function scrollHide(inf) {
 /*cart*/
 
 function cartBtnClick() {
-    var cartBlock = document.querySelectorAll(".add-cart");
+    var body = document.querySelector('body');
 
-    cartBlock.forEach(item => {
-        var cartMinus = item.querySelector('.cart-less'),
-            cartPlus = item.querySelector('.cart-more'),
-            cartCount = item.querySelector('.cart-count'),
-            cartBtn = item.querySelector('.add-to-cart'),
-            cardQuantity = item.querySelector('.card-quantity');
-        item.addEventListener('click', function (e) {
-            if (cartBtn) {
-                if (e.target.closest('.add-to-cart') == cartBtn && !item.classList.contains('card__add-cart')) {
-                    cartBtn.classList.add('hide');
-                    cardQuantity.classList.add('show');
-                }
-                if (e.target.closest('.add-to-cart') == cartBtn && document.documentElement.clientWidth < 769) {
-                    cartBtn.classList.add('hide');
-                    cardQuantity.classList.add('show');
-                }
-            }
-        });
-        cartMinus.addEventListener('click', () => {
-            if (parseInt(cartCount.value, 10) > 0) {
-                var val = parseInt(cartCount.value, 10);
-                val--;
-                cartCount.value = val;
-            }
-            else {
-                if (!item.classList.contains('card__add-cart') || document.documentElement.clientWidth < 769) {
-                    if (cartBtn) {
-                        cartBtn.classList.remove('hide');
-                        cardQuantity.classList.remove('show');
+    body.addEventListener('click', (e) => {
+        var cartBlock = document.querySelectorAll(".add-cart");
+
+        cartBlock.forEach(item => {
+            if (e.target.closest('.add-cart') == item) {
+                var cartMinus = item.querySelector('.cart-less'),
+                    cartPlus = item.querySelector('.cart-more'),
+                    cartCount = item.querySelector('.cart-count'),
+                    cartBtn = item.querySelector('.add-to-cart'),
+                    cardQuantity = item.querySelector('.card-quantity');
+
+                if (cartBtn) {
+                    if (e.target.closest('.add-to-cart') == cartBtn && !item.classList.contains('card__add-cart')) {
+                        cartBtn.classList.add('hide');
+                        cardQuantity.classList.add('show');
+                    }
+                    if (e.target.closest('.add-to-cart') == cartBtn && document.documentElement.clientWidth < 769) {
+                        cartBtn.classList.add('hide');
+                        cardQuantity.classList.add('show');
+                    }
+
+                    if (e.target.closest('.cart-less') == cartMinus) {
+                        if (parseInt(cartCount.value, 10) > 0) {
+                            var val = parseInt(cartCount.value, 10);
+                            val--;
+                            cartCount.value = val;
+                        }
+                        else {
+                            if (!item.classList.contains('card__add-cart') || document.documentElement.clientWidth < 769) {
+                                if (cartBtn) {
+                                    cartBtn.classList.remove('hide');
+                                    cardQuantity.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+
+                    if (e.target.closest('.cart-more') == cartPlus) {
+                        var val = parseInt(cartCount.value, 10);
+                        val++;
+                        cartCount.value = val;
                     }
                 }
             }
 
         });
-        cartPlus.addEventListener('click', () => {
-            var val = parseInt(cartCount.value, 10);
-            val++;
-            cartCount.value = val;
-        });
-
 
     });
+
 }
 
 function showCart() {
