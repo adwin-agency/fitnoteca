@@ -216,7 +216,7 @@ function cartBtnClick() {
             }
         });
         cartMinus.addEventListener('click', () => {
-            if (parseInt(cartCount.value, 10) > 1) {
+            if (parseInt(cartCount.value, 10) > 0) {
                 var val = parseInt(cartCount.value, 10);
                 val--;
                 cartCount.value = val;

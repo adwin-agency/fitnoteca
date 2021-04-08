@@ -139,6 +139,10 @@ function selectShow() {
 
             });
 
+
+            let opt = select.querySelector('option:checked');
+            selectedText.innerHTML = opt.innerHTML;
+
             values.forEach((item, i) => {
 
                 item.addEventListener('click', function () {
@@ -152,7 +156,7 @@ function selectShow() {
             });
 
             select.addEventListener('reset', () => {
-                selectedText.innerHTML = select.value;
+                selectedText.innerHTML = select.querySelector('option:checked').innerHTML;
             });
 
 
@@ -163,14 +167,9 @@ function selectShow() {
 }
 
 function showSelectList(span, list) {
-    if (!span.classList.contains('active')) {
-        list.classList.add('active');
-        span.classList.add('active');
-    }
-    else {
-        list.classList.remove('active');
-        span.classList.remove('active');
-    }
+
+    list.classList.toggle('active');
+    span.classList.toggle('active');
 }
 
 /*scroll hide/show*/
@@ -475,7 +474,7 @@ function filterMobWork() {
             item.addEventListener('change', () => {
                 var selected = item.querySelector('option:checked');
                 item.setAttribute('data-id', `opt-${i}`);
-                ListItemCreate(selected.getAttribute('name'), item.value, `opt-${i}`, true);
+                ListItemCreate(item.getAttribute('name'), selected.innerHTML, `opt-${i}`, true);
 
             });
         });
