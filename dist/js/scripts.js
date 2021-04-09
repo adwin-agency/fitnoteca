@@ -197,62 +197,72 @@ function scrollHide(inf) {
 function cartBtnClick() {
     var body = document.querySelector('body');
 
-    body.addEventListener('click', (e) => {
-        var cartBlock = document.querySelectorAll(".add-cart");
+    body.addEventListener('click', function (e) {
+        if (e.target.closest('.add-cart')) {
+            const item = e.target.closest('.add-cart');
+            var cartMinus = item.querySelector('.cart-less'),
+                cartPlus = item.querySelector('.cart-more'),
+                cartCount = item.querySelector('.cart-count'),
+                cartBtn = item.querySelector('.add-to-cart'),
+                cardQuantity = item.querySelector('.card-quantity'),
+                dataQuantity = cartCount.getAttribute('data-quantity');
 
-        cartBlock.forEach(item => {
-            if (e.target.closest('.add-cart') == item) {
-                var cartMinus = item.querySelector('.cart-less'),
-                    cartPlus = item.querySelector('.cart-more'),
-                    cartCount = item.querySelector('.cart-count'),
-                    cartBtn = item.querySelector('.add-to-cart'),
-                    cardQuantity = item.querySelector('.card-quantity');
+            if (cartBtn) {
+                if ((e.target.closest('.add-to-cart') == cartBtn && !item.classList.contains('card__add-cart')) || (document.documentElement.clientWidth < 769 && e.target.closest('.add-to-cart') == cartBtn)) {
+                    cartBtn.classList.add('hide');
+                    cardQuantity.classList.add('show');
 
-                if (cartBtn) {
-                    if ((e.target.closest('.add-to-cart') == cartBtn && !item.classList.contains('card__add-cart')) || (document.documentElement.clientWidth < 769 && e.target.closest('.add-to-cart') == cartBtn)) {
-                        cartBtn.classList.add('hide');
-                        cardQuantity.classList.add('show');
-
-                        var val = parseInt(cartCount.value, 10);
-                        val++;
-                        cartCount.value = val;
+                    var val = parseInt(cartCount.value, 10);
+                    val++;
+                    cartCount.value = val;
+                    if (dataQuantity == val) {
+                        cartPlus.disabled = true;
                     }
-                    // if (e.target.closest('.add-to-cart') == cartBtn && document.documentElement.clientWidth < 769) {
-                    //     cartBtn.classList.add('hide');
-                    //     cardQuantity.classList.add('show');
-                    // }
-
-                    if (e.target.closest('.cart-less') == cartMinus) {
-                        if (parseInt(cartCount.value, 10) > 1) {
+                    else {
+                        cartPlus.disabled = false;
+                    }
+                }
+            }
+            if (e.target.closest('.cart-less') == cartMinus) {
+                if (parseInt(cartCount.value, 10) > 1) {
+                    var val = parseInt(cartCount.value, 10);
+                    val--;
+                    cartCount.value = val;
+                    cartPlus.disabled = false;
+                }
+                else {
+                    if (!item.classList.contains('card__add-cart') || document.documentElement.clientWidth < 769) {
+                        if (cartBtn) {
+                            cartPlus.disabled = false;
+                            cartBtn.classList.remove('hide');
+                            cardQuantity.classList.remove('show');
                             var val = parseInt(cartCount.value, 10);
                             val--;
                             cartCount.value = val;
-                        }
-                        else {
-                            if (!item.classList.contains('card__add-cart') || document.documentElement.clientWidth < 769) {
-                                if (cartBtn) {
-                                    cartBtn.classList.remove('hide');
-                                    cardQuantity.classList.remove('show');
-                                    var val = parseInt(cartCount.value, 10);
-                                    val--;
-                                    cartCount.value = val;
 
-                                }
-                            }
                         }
-                    }
-
-                    if (e.target.closest('.cart-more') == cartPlus) {
-                        var val = parseInt(cartCount.value, 10);
-                        val++;
-                        cartCount.value = val;
                     }
                 }
             }
 
-        });
+            if (e.target.closest('.cart-more') == cartPlus) {
+                var val = parseInt(cartCount.value, 10);
 
-    });
+                if (dataQuantity > val || dataQuantity == "" || dataQuantity == null) {
+                    val++;
+                    cartCount.value = val;
+                    if (dataQuantity == val) {
+                        cartPlus.disabled = true;
+                    }
+                    else {
+                        cartPlus.disabled = false;
+                    }
+                }
+
+            }
+
+        }
+    })
 
 }
 

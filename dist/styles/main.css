@@ -372,6 +372,10 @@ textarea {
   width: 14px;
 }
 
+.cart-more.btn.bg_blue:disabled {
+  background-color: #9b9999;
+}
+
 .bg_blue {
   background-color: #21303d;
 }
@@ -2242,6 +2246,14 @@ body.lb-disable-scrolling {
   display: none;
 }
 
+.goods__right-wrapper {
+  width: 100%;
+}
+
+.goods__wrapper {
+  width: 100%;
+}
+
 .filter {
   width: 100%;
   background-color: #f9fafc;
@@ -2681,6 +2693,10 @@ body.lb-disable-scrolling {
 
 .cat2-goods .pagination {
   margin-bottom: 59px;
+}
+
+.cat2-goods__wrapper-right {
+  width: 100%;
 }
 
 .cat3-goods {

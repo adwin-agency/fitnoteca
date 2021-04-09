@@ -237,7 +237,9 @@ textarea{
     width: 14px;
     
 }
-
+.cart-more.btn.bg_blue:disabled{
+    background-color: #9b9999;
+}
 @media screen and (max-width: 1600px)
 {.container {
     max-width: 1260px;
