@@ -81,11 +81,10 @@
         margin-right: 38px;
     }
     & .cat1-goods__quantity{
-        display: flex;
+        //display: flex;
     }
     & .cat1-goods__cart{
         width: 200px;
-        margin-left: 52px;
         justify-content: center;
     }
     & .cart__btn-text{
@@ -244,9 +243,7 @@
     
 }
 @media(max-width:1600px){
-    .card .cat1-goods__cart {
-        margin-left: 32px;
-    }
+
     .card__props {
         margin-bottom: 70px;
     }
@@ -363,7 +360,7 @@
         width: 100%;
     }
     .card .cat1-goods__cart {
-        margin-left: 19px;
+        
         width: 164px;
     }
     .card__size-inf{

@@ -133,6 +133,12 @@
     }
 }
 @media(max-width:768px){
+    .goods__right-wrapper{
+        width: auto;
+    }
+    .goods__wrapper{
+        width:auto;
+    }
 
     .goods .cat1-goods__list {
         justify-content: space-between;

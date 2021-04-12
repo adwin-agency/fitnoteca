@@ -118,11 +118,58 @@ function rangeSettings() {
 }
 /*selects*/
 function selectShow() {
-    var container = document.querySelectorAll('.form-select');
+    //var container = document.querySelectorAll('.form-select');
     var body = document.getElementsByTagName('body')[0];
 
-    if (container) {
-        container.forEach(item => {
+    // if (container) {
+    //     container.forEach(item => {
+
+    //         var select = item.querySelector('.hidden-select');
+    //         var selectedText = item.querySelector('.form-select__selected');
+    //         var values = item.querySelectorAll('.form-select__option');
+    //         var list = item.querySelector('.form-select-list');
+    //         body.addEventListener('click', function (e) {
+    //             if (item != e.target.closest('.form-select')) {
+    //                 list.classList.remove('active');
+    //                 selectedText.classList.remove('active');
+    //             }
+    //         });
+    //         selectedText.addEventListener('click', function (e) {
+    //             showSelectList(this, list);
+
+    //         });
+
+
+    //         let opt = select.querySelector('option:checked');
+    //         selectedText.innerHTML = opt.innerHTML;
+
+    //         values.forEach((item, i) => {
+
+    //             item.addEventListener('click', function () {
+    //                 var text = this.innerHTML;
+    //                 selectedText.innerHTML = text;
+    //                 select.options[i].selected = true;
+    //                 var event = new Event('change');
+    //                 select.dispatchEvent(event);
+    //                 showSelectList(selectedText, list);
+    //             });
+    //         });
+
+    //         select.addEventListener('reset', () => {
+    //             selectedText.innerHTML = select.querySelector('option:checked').innerHTML;
+    //         });
+
+
+
+    //     });
+
+    // }
+    // });
+
+    body.addEventListener('click', (e) => {
+
+        if (e.target.closest('.form-select')) {
+            let item = e.target.closest('.form-select');
 
             var select = item.querySelector('.hidden-select');
             var selectedText = item.querySelector('.form-select__selected');
@@ -134,36 +181,35 @@ function selectShow() {
                     selectedText.classList.remove('active');
                 }
             });
-            selectedText.addEventListener('click', function (e) {
-                showSelectList(this, list);
-
-            });
+            if (e.target.closest('.form-select__selected')) {
+                showSelectList(selectedText, list);
+            }
 
 
             let opt = select.querySelector('option:checked');
             selectedText.innerHTML = opt.innerHTML;
 
             values.forEach((item, i) => {
-
-                item.addEventListener('click', function () {
-                    var text = this.innerHTML;
+                if (e.target.closest('.form-select__option') == item) {
+                    var text = item.innerHTML;
                     selectedText.innerHTML = text;
                     select.options[i].selected = true;
                     var event = new Event('change');
                     select.dispatchEvent(event);
                     showSelectList(selectedText, list);
-                });
+                }
             });
 
             select.addEventListener('reset', () => {
                 selectedText.innerHTML = select.querySelector('option:checked').innerHTML;
             });
+        }
+        else {
+
+        }
+    });
 
 
-
-        });
-
-    }
 }
 
 function showSelectList(span, list) {
@@ -208,7 +254,8 @@ function cartBtnClick() {
                 dataQuantity = cartCount.getAttribute('data-quantity');
 
             if (cartBtn) {
-                if ((e.target.closest('.add-to-cart') == cartBtn && !item.classList.contains('card__add-cart')) || (document.documentElement.clientWidth < 769 && e.target.closest('.add-to-cart') == cartBtn)) {
+                if (e.target.closest('.add-to-cart') == cartBtn) {
+                    console.log('cart');
                     cartBtn.classList.add('hide');
                     cardQuantity.classList.add('show');
 
@@ -231,16 +278,14 @@ function cartBtnClick() {
                     cartPlus.disabled = false;
                 }
                 else {
-                    if (!item.classList.contains('card__add-cart') || document.documentElement.clientWidth < 769) {
-                        if (cartBtn) {
-                            cartPlus.disabled = false;
-                            cartBtn.classList.remove('hide');
-                            cardQuantity.classList.remove('show');
-                            var val = parseInt(cartCount.value, 10);
-                            val--;
-                            cartCount.value = val;
+                    if (cartBtn) {
+                        cartPlus.disabled = false;
+                        cartBtn.classList.remove('hide');
+                        cardQuantity.classList.remove('show');
+                        var val = parseInt(cartCount.value, 10);
+                        val--;
+                        cartCount.value = val;
 
-                        }
                     }
                 }
             }
