@@ -239,15 +239,25 @@
 .cart-icon__wrap{
     position: relative;
 }
-.cart-icon__wrap.active:after{
-    content: "";
+.cart-icon__wrap.active .cart-icon__quantity{
     position: absolute;
-    height: 7px;
-    width: 7px;
+    height: 15px;
+    width: 15px;
     background-color: #e9b0b7;
-    top: 0px;
-    right: -5px;
+    top: -4px;
+    right: -9px;
     border-radius: 50%;
+    color: #21303d;
+    box-sizing: border-box;
+    font-size: 9px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 8px;
+    z-index: 8;
+    cursor: pointer;
 
 }
 @media(max-width:1600px){

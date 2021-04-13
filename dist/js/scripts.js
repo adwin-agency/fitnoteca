@@ -313,7 +313,7 @@ function cartBtnClick() {
 
 function showCart() {
     var cart = document.querySelector('.cart');
-    var cartIcon = document.querySelector('#cart-icon');
+    var cartIcon = document.querySelector('.cart-icon__wrap');
     var resumeBtn = document.querySelector('.cart__resume');
 
     if (cart && cartIcon) {
