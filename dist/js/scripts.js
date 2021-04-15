@@ -118,53 +118,9 @@ function rangeSettings() {
 }
 /*selects*/
 function selectShow() {
-    //var container = document.querySelectorAll('.form-select');
     var body = document.getElementsByTagName('body')[0];
 
-    // if (container) {
-    //     container.forEach(item => {
 
-    //         var select = item.querySelector('.hidden-select');
-    //         var selectedText = item.querySelector('.form-select__selected');
-    //         var values = item.querySelectorAll('.form-select__option');
-    //         var list = item.querySelector('.form-select-list');
-    //         body.addEventListener('click', function (e) {
-    //             if (item != e.target.closest('.form-select')) {
-    //                 list.classList.remove('active');
-    //                 selectedText.classList.remove('active');
-    //             }
-    //         });
-    //         selectedText.addEventListener('click', function (e) {
-    //             showSelectList(this, list);
-
-    //         });
-
-
-    //         let opt = select.querySelector('option:checked');
-    //         selectedText.innerHTML = opt.innerHTML;
-
-    //         values.forEach((item, i) => {
-
-    //             item.addEventListener('click', function () {
-    //                 var text = this.innerHTML;
-    //                 selectedText.innerHTML = text;
-    //                 select.options[i].selected = true;
-    //                 var event = new Event('change');
-    //                 select.dispatchEvent(event);
-    //                 showSelectList(selectedText, list);
-    //             });
-    //         });
-
-    //         select.addEventListener('reset', () => {
-    //             selectedText.innerHTML = select.querySelector('option:checked').innerHTML;
-    //         });
-
-
-
-    //     });
-
-    // }
-    // });
 
     body.addEventListener('click', (e) => {
 
@@ -779,6 +735,36 @@ function bodyShadow(condition) {
         shadow.classList.remove('active');
     }
 }
+/*workout cart click*/
+
+function worckoutCartClick() {
+    let body = document.querySelector('body');
+
+    let items = document.querySelectorAll('.cat3-goods__massage-item');
+
+    if (items.length > 0) {
+        items.forEach(item => {
+            let cart = item.querySelector('.cart-btn');
+            let radio = item.querySelector('input[type=radio]:checked');
+
+            if (radio && radio.hasAttribute('data-id')) {
+                cart.setAttribute('data-id', radio.getAttribute('data-id'));
+            }
+        });
+
+    }
+
+    body.addEventListener('click', (e) => {
+        if (e.target.closest('.cat3-goods__massage-item')) {
+            let item = e.target.closest('.cat3-goods__massage-item');
+            let cart = item.querySelector('.cart-btn');
+            let radio = item.querySelector('input[type=radio]:checked');
+            if (radio && radio.hasAttribute('data-id')) {
+                cart.setAttribute('data-id', radio.getAttribute('data-id'));
+            }
+        }
+    });
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     menuMobUse();
@@ -798,6 +784,7 @@ document.addEventListener('DOMContentLoaded', () => {
     smoothScroll();
     headerDrop();
     headerScroll();
+    worckoutCartClick();
 
 
 });
