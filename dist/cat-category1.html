@@ -209,12 +209,12 @@
             <p class="form-filter__header">Фильтры</p>
             <div class="form-select">
                 <span class="form-select__selected">Все Бренды</span>
-                <select name="Бренд:" class="hidden-select">
-                    <option value="Все Бренды" data-text="" name="Бренд:">Все Бренды</option>
-                    <option value="2" name="Бренд:" selected>Бренд тест
+                <select class="hidden-select">
+                    <option value="Все Бренды" data-value="Все Бренды" data-name="Бренд:">Все Бренды</option>
+                    <option value="2" data-value="Новый бренд 1" data-name="Бренд:">Бренд тест
                     </option>
-                    <option value="Бренд 3" name="Бренд:">Бренд 3</option>
-                    <option value="Бренд 4" name="Бренд:">Бренд 4</option>
+                    <option value="Бренд 3" data-value="Новый бренд 2" data-name="Бренд:">Бренд 3</option>
+                    <option value="Бренд 4" data-value="Новый бренд 3" data-name="Бренд:">Бренд 4</option>
                 </select>
                 <ul class="form-select-list">
                     <li class="form-select__option">Все Бренды</li>
@@ -225,8 +225,8 @@
             </div>
             <div class="form-range">
                 <div class="range-inputs">
-                    <input type="text" class="range-input" name="Цена: от" id="range-input-min" value="10">
-                    <input type="text" class="range-input" name="до" id="range-input-max" value="10000">
+                    <input type="text" class="range-input" data-name="Цена: от" id="range-input-min" value="10">
+                    <input type="text" class="range-input" data-name="до" id="range-input-max" value="10000">
                 </div>
                 <div class="range" id="range"></div>
             </div>
@@ -262,11 +262,13 @@
             </div>
             <div class="filter__checkboxes cat1__checkboxes">
                 <div class="form-checkbox">
-                    <input type="checkbox" class="checkbox" id="checkbox" name="Наличие:" value="в наличии" />
+                    <input type="checkbox" class="checkbox" id="checkbox" data-name="Наличие2:" value="в наличии"
+                        data-value="в наличии2" />
                     <label for="checkbox">Только в наличии</label>
                 </div>
                 <div class="form-checkbox">
-                    <input type="checkbox" class="checkbox" id="checkbox2" value="Товары со скидкой" name="" />
+                    <input type="checkbox" class="checkbox" id="checkbox2" value="Товары со скидкой"
+                        data-value="Товары со скидкой" data-name="" />
                     <label for="checkbox2">Товары со скидкой</label>
                 </div>
                 <div class="form-checkbox">

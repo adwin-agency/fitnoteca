@@ -489,7 +489,7 @@ function filterMobWork() {
             item.addEventListener('change', () => {
                 if (item.getAttribute('type') != 'text') {
                     item.setAttribute('data-id', `inp-${i}`);
-                    ListItemCreate(item.getAttribute('name'), item.value, `inp-${i}`, item.checked);
+                    ListItemCreate(item.getAttribute('data-name'), item.getAttribute('data-value'), `inp-${i}`, item.checked);
                 }
                 else {
                     ListItemCreate(`Цена: от ${range.noUiSlider.get()[0]}`, `до ${range.noUiSlider.get()[1]}`, `range`, true);
@@ -500,7 +500,7 @@ function filterMobWork() {
             item.addEventListener('change', () => {
                 var selected = item.querySelector('option:checked');
                 item.setAttribute('data-id', `opt-${i}`);
-                ListItemCreate(item.getAttribute('name'), selected.innerHTML, `opt-${i}`, true);
+                ListItemCreate(selected.getAttribute('data-name'), selected.getAttribute('data-value'), `opt-${i}`, true);
 
             });
         });
