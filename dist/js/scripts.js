@@ -487,7 +487,11 @@ function filterMobWork() {
 
         inputs.forEach((item, i) => {
             item.addEventListener('change', () => {
-                if (item.getAttribute('type') != 'text') {
+                if (item.getAttribute('type') == 'radio') {
+                    item.parentNode.setAttribute('data-id', `inp-${i}`);
+                    ListItemCreate(item.getAttribute('data-name'), item.getAttribute('data-value'), `inp-${i}`, item.checked);
+                }
+                else if (item.getAttribute('type') == 'checkbox') {
                     item.setAttribute('data-id', `inp-${i}`);
                     ListItemCreate(item.getAttribute('data-name'), item.getAttribute('data-value'), `inp-${i}`, item.checked);
                 }
