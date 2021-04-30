@@ -499,7 +499,7 @@ function filterMobWork() {
         selects.forEach((item, i) => {
             item.addEventListener('change', () => {
                 var selected = item.querySelector('option:checked');
-                item.setAttribute('data-id', `opt-${i}`);
+                selected.parentNode.setAttribute('data-id', `opt-${i}`);
                 ListItemCreate(selected.getAttribute('data-name'), selected.getAttribute('data-value'), `opt-${i}`, true);
 
             });
